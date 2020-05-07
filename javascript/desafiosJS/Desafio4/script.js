@@ -10,14 +10,18 @@
 */
 
 let fatorial = prompt("Insira um número para descobrir sue fatorial:");
+let multiplicacao = new Array();
 let resultado = 1;
-let multiplicacao = "";
 
 for(let i = fatorial; i>=2; i--){
     resultado*=i;
-    multiplicacao+=`${i}.`;
 }
-multiplicacao+="1";
+
+for(let i = fatorial; i>0; i--){
+    multiplicacao[i-1]=i;
+}
+
+multiplicacao = multiplicacao.reverse();
 
 console.log(`Fatorial de : ${fatorial}\n
-${fatorial}! = ${multiplicacao} = ${resultado}`);
+${fatorial}! = ${multiplicacao.join(".")} = ${resultado}`);
