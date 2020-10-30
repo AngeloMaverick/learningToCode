@@ -1,0 +1,130 @@
+GIT COMMANDS
+CTRL + INSERT              --> COPIAR
+SHIFT + INSERT             --> COLAR
+code .                             --> Abre o VSCode no diretório atual
+git init                              --> Inicializar repositório
+ls -la                                 --> Listar arquivos GIT
+git status                           --> Mostra como está o repositório
+git add arquivo.xxx              --> Adiciona o arquivo selecionado para versionamento
+git commit -m "mensagem" --> COMMIT 
+git commit -am "mensagem" --> COMMIT second form
+
+git shortlog                         --> Minilog dos commits
+git shortlog -sn                    --> Minilog mostrando a quantidade de commits e seus respectivos authors
+git log                                 --> Log dos commits
+git log --decorate                  --> Branches ... Merges... Threads...
+git log --author="nome"        --> Pesquisa de commits pelo Author
+git log --graph                      --> Log dos commits de forma gráfica
+git show hash                     --> Mostra detalhes minuciosos do commit
+
+git diff                                 --> Mostra modificações de um repositório
+git diff --name-only               --> Mostra somente o nome do arquivo que foi modificado
+
+git ckechout arquivo.xxx           --> Volta para a versão anterior a modificação (Antes de dar um add)
+git reset HEAD arquivo.xxx       --> Retira o arquivo da fila de STAGED
+git reset --soft previous_hash     --> Mata o commit e volta o arquivo no modo STAGED pronto para ser commitado novamente
+git reset --mixed previous_hash  --> Mata o commit e volta o arquivo no modo MODIFIED
+git reset --hard previous_hash     --> IGNORA A EXISTÊNCIA DO COMMIT (Usar somente antes de dar push)
+
+git remote add origin git@github.com:NICKNAME/REPOSITORY.git --> Adiciona repositório remoto
+git remote                    --> Ja existe o repositório origin
+git remote -v                 --> Da mais informações
+git push -u origin master --> Envia todo o repositório local que tenho para o repositório na nuvem inicialmente
+git push origin master     --> Envia pro Github e assim por diante
+
+git checkout -b name_branch --> Cria um branch
+git branch                             --> Lista os Branches existentes
+git checkout name_branch     --> Muda o teu branch
+git branch -D name_branch    --> Deleta um branch existente
+
+git merge branch_name  --> Da um Merge no branch em que você se localiza, inserindo dentro de si
+o branch selecionado.
+
+git rebase branch_name --> Da um Rebase no branch em que você se localiza, inserindo dentro de si
+o branch selecionado.
+
+vi .gitignore --> Cria um arquivo que ignora determinados arquivos para o sistema GIT
+EXEMPLOS DE CONTEÚDO: *.json --> Ignora todos os arquivos JSON
+                                              db.xls --> Ignora um determinado arquivo em específico
+
+git stash          --> Guarda as modificações do repositório e vai criar um estado de WIP(Work in Progress)
+git stash apply --> Aplicar mudançar que tinha guardado
+git stash list     --> Listar todos os stash em uso
+git stash clear  --> Apagar todos os stashes
+
+git tag -a 1.0.0 -m "Readme finalizado" --> Criação de releases (versão -m "mensagem")
+git tag                                                --> Exibe todas as versões
+git push origin master --tags                 --> Push em todas as tags
+
+git revert rash_code --> Reverte o commit e o deixa no histórico, assim, não sumindo completamente
+
+git tag -d version_number        --> Deletar tag
+git branch -d branch_name       --> Deletar Branch
+git push origin :version_number --> Apaga release do repositório móvel
+git push origin :branch_name    --> Apaga branch do repositório móvel
+
+git clone git@github.com:NICKNAME/REPOSITORY.git new_repository_name  --> 
+Cria uma cópia do repositório remoto para o seu computador
+
+fork --> Ir no repositório móvel, clicar em Fork, para conseguir uma cópia do repositório móvel de alguém
+para conseguir trabalhar junto á um projeto open source
+
+
+PASSO A PASSO
+1. Criar uma pasta para o projeto;
+2. Dar um git init na pasta para inicializar repositório;
+3. Dar um ls -la para ver se inicializou corretamente;
+4. Dar um git status inicial de verificação;
+5. Adicione o arquivo com git add para disponibilizar criação de versionamentos;
+6. Modifique o documento como desejar;
+7. Percebe-se que quando um arquivo foi modificado aparece ele novamente abaixo, só que em vermelho.
+8. Dê novamente um git add para atualizar o arquivo.
+9. Dê um Commit.
+10. Após dado o commit não haverá nada no git status.
+11. Modifique o documento novamente.
+12. Percebe-se que está em vermelho e é impossível commitar.
+13. Adicione o documento com git add novamente.
+14. Agora da pra commitar.
+15. Dê um git log
+
+NAVEGAÇÃO
+clear OU CTRL+L    -> Limpa a tela
+pwd                        -> Exibe o diretório onde você está
+cd nome_pasta        -> Mudar diretório - Change directory 
+cd ..                        -> Voltar para pasta anterior
+cd /                         -> Vai até o diretório raiz
+ls                            -> Listar arquivos no diretório atual
+ls -l                          -> Listar arquivos + detalhes
+ls -lh                        -> Listar arquivos + detalhes com melhor visualização
+mkdir nome_arquivo -> Cria nova pasta/arquivo
+
+EDITOR VIM
+vi arquivo.md --> Criar um arquivo md e editar com o VIM
+
+CONFIGURAÇÕES
+git --version                                                --> Exibe versão do git
+git config --list                                             --> Mostra todas as informações do Git
+git config --global user.name "nome"             --> Mudar o nome de usuário
+git config --global user.email "email"              --> Mudar o email do usuário
+git config --global core.editor comando_editor --> Mudar o editor de texto principal do Git
+git config --global alias.s status                      --> Cria atalhos (no caso, "alias.letra_atalho comando")
+
+git config --global core.autocrlf false --> Desabilita informações e conversão de LF para CRLF
+
+
+ADICIONAR SSH KEY
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" --> Gerar chave RSA
+Dê ENTER 3x nas solicitações seguintes
+
+cd ~/.ssh/        --> Ir para a localização da chave
+ls                    --> Para verificar o que há no diretório
+cat id_rsa.pub --> Para exibir a chave de acesso
+
+COPIE A CHAVE DE ACESSO
+GITHUB --> SETTINGS --> SSH and GPG keys
+New SSH key --> Cole a chave e dê um título com o nome da máquina
+
+
+
+
+
