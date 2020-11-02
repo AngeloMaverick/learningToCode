@@ -1,14 +1,27 @@
-"use strict"
+let a = 1;
+let b = 2;
+let c = 3;
 
-let opa = 'teste';
-//delete Object.prototype; //(não é possivel apagar codigo nativo)
-
-function teste() {
-    "use strict"
-    let testando = 'teste';
+if(c > a){
+    a = b;
+    console.log(a);
 }
 
-teste();
+for(let i = 5; i > 0; i--){
+    b++;
+    a = a+c+1;
+    c += 2;
+    console.log(a);
+}
 
-//false.prop = "";
-//"teste".prop = "";
+if(b == a){
+    a++;
+}else{
+    a = a+b+c;
+}
+
+console.log(a);
+
+a = a*b;
+
+console.log(a);
