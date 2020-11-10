@@ -6,4 +6,4 @@ ALT+SHIFT+[F] --> Organiza o código padrão VSCode
 
 ---NPM COMMANDS--
 npm init -y --> Criação do arquivo package.json
-npm i json-server --> Instalação do json-server
+npm i json-server --> Instalação do json-server (node_modules + package-lock.json)
