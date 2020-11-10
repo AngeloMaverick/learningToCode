@@ -1,9 +1,12 @@
 ---VSCODE COMMANDS--
-ALT+SHIFT+[F] --> Organiza o código padrão VSCode
+ALT+SHIFT+[F]                --> Organiza o código padrão VSCode
 (selecionado) ALT+SHIFT+[↓]  --> Copia e colar logo abaixo da seleção
-(selecionado) ALT+[↓] --> Vai jogando a selação de linha em linha
+(selecionado) ALT+[↓]        --> Vai jogando a selação de linha em linha
 
 
 ---NPM COMMANDS--
-npm init -y --> Criação do arquivo package.json
-npm i json-server --> Instalação do json-server (node_modules + package-lock.json)
+npm start             --> Inicializa a aplicação
+npm init -y           --> Criação do arquivo package.json
+npm i json-server     --> Instalação do json-server (node_modules + package-lock.json)
+npm i -g @angular/cli -->
+ng new minha-app      -->
