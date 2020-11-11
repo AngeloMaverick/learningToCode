@@ -8,5 +8,7 @@ ALT+SHIFT+[F]                --> Organiza o código padrão VSCode
 npm start             --> Inicializa a aplicação
 npm init -y           --> Criação do arquivo package.json
 npm i json-server     --> Instalação do json-server (node_modules + package-lock.json)
-npm i -g @angular/cli -->
-ng new minha-app      -->
+npm i -g @angular/cli --> Instalação do Command Line Interface (CLI) do Angular
+ng                    --> help Angular
+ng new "minha-app"      --> Criar um projeto Angular
+ng new "minha-app" --minimal --> Cria um projeto sem arquivos desnecessários para um projeto pequeno
