@@ -5,3 +5,4 @@
 5. No lugar colocar "templateUrl: 'app.component.html'" e criar um arquivo app.component.html na pasta app
 6. Em app.module.ts, na linha 9, colocar:
 import { MatToolbarModule } from '@angular/material/toolbar'; e colocar a nomenclatura nos imports
+7. Inserir também o MatSidenavModule ..material/sidenav e o MatListModule ..material/list

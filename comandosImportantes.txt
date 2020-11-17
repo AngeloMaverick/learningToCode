@@ -14,4 +14,4 @@ ng new "minha-app"           --> Criar um projeto Angular
 ng new "minha-app" --minimal --> Cria um projeto sem arquivos desnecessários para um projeto pequeno
 npm install                  --> Instalação do node_modules
 ng add @angular/material --> Instalar os componentes do material
-ng generate component "localização do path" (exemplo components/template/header) --> Criação de componentes
+ng generate component "localização do path" (exemplo components/template/header) --> Criação de componentes header, footer e nav
