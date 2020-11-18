@@ -1,0 +1,92 @@
+----Elementos do Angular: Aula 01----
+• Componentes
+• Diretivas
+• Rotas
+• Pipes
+
+• Observables
+
+• Services
+• Injeção de Dependências
+
+----Componente Angular----
+HTML / CSS / TS(TypeScript)
+home.component.css
+home.component.html
+home.component.ts
+<app-home></app-home>
+
+----Attribute Directives----
+Altera a aparência e o comportamento de um elemento, componente ou outra diretiva.
+
+Exemplo:
++++++++++++++++++++++++++++++++++++++++++++++++++
+@Directive({   //<--Decorator
+    selector: '[appRed]'
+})
+export class RedDirective {
+    
+    constructor(el: ElementRef) {
+        el.nativeElement.style.color = '#e35e6b';
+    }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Decorator é um padrão de projeto, ele tem como objetivo evitar herança, trabalhando com composição para extender determinado objeto
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+//Ícone "favorito" com o coração vazado
+
+<i class="material-icons v-middle">
+    favorite
+</i>
+++++++++++++++++++++++++++++++++++++++++++++++++++
+//Ícone "favorito" com o coração vermelho
+
+<i class="material-icons v-middle" appRed>
+    favorite
+</i>
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+----Structural Directives----
+Altera o layout adicionando e removendo elementos da DOM(Document Object Model).
+++++++++++++++++++++++++++++++++++++++++++++++++++
+// Ele vai exibir ou não o elemento do formulário se o produto estiver definido(setado)
+<form *ngIf="product"
+    class="product-form">
+</form>
+++++++++++++++++++++++++++++++++++++++++++++++++++
+// Ele vai acrescentar novos elementos
+<ul>
+    <li *ngFor="let product of products">
+        {{ product.name }}
+    </li>
+</ul>
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+----Property Binding----
+Angular Component
+HTML-----
+<table
+    [dataSource]="products">
+
+</table>
+------
+
+TS-----
+@Component{{
+    selector: 'app-product-read',
+    templateUrl: './product-read.component.html',
+    styleUrls: ['./product-read.component.css']
+})
+export class ProductReadComponent
+    implements OnInit {
+    
+    products: Product[];
+}
+-------
+
+--> Vídeo / 00:10:50
+
+
+
