@@ -8,19 +8,19 @@
 
 • Services
 • Injeção de Dependências
-
+*******************************************************************
 ----Componente Angular----
 HTML / CSS / TS(TypeScript)
 home.component.css
 home.component.html
 home.component.ts
 <app-home></app-home>
-
+*******************************************************************
 ----Attribute Directives----
 Altera a aparência e o comportamento de um elemento, componente ou outra diretiva.
 
 Exemplo:
-+++++++++++++++++++++++++++++++++++++++++++++++++
+------------------------------------------------
 @Directive({   //<--Decorator
     selector: '[appRed]'
 })
@@ -30,41 +30,39 @@ export class RedDirective {
         el.nativeElement.style.color = '#e35e6b';
     }
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------
 
 Decorator é um padrão de projeto, ele tem como objetivo evitar herança, trabalhando com composição para extender determinado objeto
 
-++++++++++++++++++++++++++++++++++++++++++++++++++
+-----------------------------------------------
 //Ícone "favorito" com o coração vazado
 
 <i class="material-icons v-middle">
     favorite
 </i>
-++++++++++++++++++++++++++++++++++++++++++++++++++
+------------------------------------------
 //Ícone "favorito" com o coração vermelho
 
 <i class="material-icons v-middle" appRed>
     favorite
 </i>
-++++++++++++++++++++++++++++++++++++++++++++++++++
-
+*******************************************************************
 ----Structural Directives----
 Altera o layout adicionando e removendo elementos da DOM(Document Object Model).
-++++++++++++++++++++++++++++++++++++++++++++++++++
+--------------------------------------
 // Ele vai exibir ou não o elemento do formulário se o produto estiver definido(setado)
 <form *ngIf="product"
     class="product-form">
 </form>
-++++++++++++++++++++++++++++++++++++++++++++++++++
+--------------------------------------
 // Ele vai acrescentar novos elementos
 <ul>
     <li *ngFor="let product of products">
         {{ product.name }}
     </li>
 </ul>
-++++++++++++++++++++++++++++++++++++++++++++++++++
-
-----Property Binding----
+*******************************************************************
+----Property Binding-------------------
 Angular Component
 HTML-----
 <table
@@ -85,8 +83,92 @@ export class ProductReadComponent
     products: Product[];
 }
 -------
+*******************************************************************
+----Event Binding-------------------
+Angular Component
+HTML-----
+<button mat-raised-button
+    (click)="createProduct()"
+    color="primary">
+    Salvar
+</button>
+------
 
---> Vídeo / 00:10:50
+TS-----
+@Component{{
+    selector: 'app-product-create',
+    templateUrl: './product-create.component.html',
+    styleUrls: ['./product-create.component.css']
+})
+export class ProductCreateComponent
+    implements OnInit {
+    
+    createProduct(): void {
+        // ...
+    }
+}
+-------
+*******************************************************************
+----One Way Data Binding--------------
+Angular Component
+HTML-----
+Nome:
+<input [value]="nome">
+
+TS-----
+Nome | Rebeca
+nome: string;
+*******************************************************************
+----Two Way Data Binding--------------
+Angular Component
+HTML-----
+Nome:
+<input [(ngModel)]="nome">
+
+TS-----
+Nome | Rebeca
+nome: string;
+*******************************************************************
+----Angular Router-------------------
+/home    [Comp. Home]
+/produto [Comp. Prod]
+/usuario [Comp. Usuário]
+Single Page Application (SPA)
+Router Outlet
+
+-------
+<a routerLink="/products">
+    Produtos
+</a>
+-------
+const routes: Routes = [{
+    path: "products",
+    component: ProductCrudComponent
+}, {
+    path: "products/create",
+    component: ProductCreateComponent
+}];
+-------
+<mat-sidenav-content>
+    <router-outlet></router-outlet>
+</mat-sidenav-content>
+-------
+*******************************************************************
+-----Angular Pipes----------------------
+<p>
+    O vencimento é 
+    {{ product.price | date }}
+</p>
+-------
+<td mat-cell *matCellDef="let product">
+    {{ product.price | currency: 'BRL' }}
+</td>
+-------
+<p>
+    O vencimento é
+    {{ produto.vencimento | date: 'fullDate' | uppercase }}
+</p>
+-------
 
 
 
