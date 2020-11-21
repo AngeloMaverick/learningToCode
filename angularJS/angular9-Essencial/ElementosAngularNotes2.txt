@@ -1,0 +1,15 @@
+----Elementos do Angular: Aula 02-----------------------------
+----Programação Reativa----
+ReactiveX
+------
+import { Observable } from "rxjs";
+------
+----O Padrão Observer----
+Padrão orientado a Evento!
+[Subject] = Que tem a capacidade de monitorar e detectar quando o evento acontece
+[Observers] = São os códigos ou as pessoas que estão interessadas em um determinado evento
+• Todos os Observers precisam registar no Subject para demonstrar que está interessado no evento
+• O Subject é capaz de detectar que o evento aconteceu
+• O Subject irá notificar todos os Observers
+
+--> vídeo 02 / 00:08:00
