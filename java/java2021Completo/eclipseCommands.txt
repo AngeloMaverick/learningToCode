@@ -1,0 +1,6 @@
+CTRL+SHIFT+F11 ---> RUN
+CTRL+SHIFT+[F]   ---> Indenta
+ALT+SHIFT+[R]    ---> Rename
+CTRL+[M]         ---> Maximiza o código
+CTRL+[/]         ---> Comenta a seleção 
+CTRL+SHIFT+[S]   ---> Salva

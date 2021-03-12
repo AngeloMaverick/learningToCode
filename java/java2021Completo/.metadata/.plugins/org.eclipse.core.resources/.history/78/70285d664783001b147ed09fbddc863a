@@ -1,0 +1,16 @@
+package fundamentos;
+
+public class Temperatura {
+	public static void main(String[] args) {
+		// (°F - 32) x 5/9 = °C
+		//  VAR  CONST CONST VAR
+		final int n1 = 32;
+		final double n2 = 5/9.0;
+		double fah = 32;
+		double cel;
+		
+		System.out.println("(32°F - 32) x 5/9 = °C");
+		cel = (fah - n1)*n2
+		System.out.println(cel + "°C");
+	}
+}
