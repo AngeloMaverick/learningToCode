@@ -1,6 +1,9 @@
 CTRL+SHIFT+F11 ---> RUN
 CTRL+SHIFT+[F]   ---> Indenta
 ALT+SHIFT+[R]    ---> Rename
-CTRL+[M]         ---> Maximiza o código
+CTRL+[M]         ---> Maximiza/minimiza o código
 CTRL+[/]         ---> Comenta a seleção 
 CTRL+SHIFT+[S]   ---> Salva
+ALT+[CIMA/BAIXO]           ---> Move a linha de código
+CTRL+ALT+[CIMA/BAIXO] --> Copia a linha de código e cola em uma nova linha abaixo
+CTRL+SHIFT+[O] --> Organiza os Imports, retirando os que não estão sendo usados e dando dicas de quais precisam ser usados.

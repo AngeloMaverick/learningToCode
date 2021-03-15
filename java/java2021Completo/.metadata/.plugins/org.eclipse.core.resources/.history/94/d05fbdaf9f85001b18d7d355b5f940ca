@@ -1,0 +1,5 @@
+package fundamentos;
+
+public class NotacaoPonto {
+	double a = 2.3;
+}
