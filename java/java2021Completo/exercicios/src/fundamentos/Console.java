@@ -15,7 +15,20 @@ public class Console {
 		
 		System.out.printf("Salário: %.1f%n", 1234.5678);
 		System.out.printf("Nome: %s%n", "João");
-		//Scanner entrada = new Scanner();
-		// Vídeo 26 - 7:36
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Digite o seu nome: ");
+		String nome = entrada.nextLine();
+		
+		System.out.print("Digite o seu sobrenome: ");
+		String sobrenome = entrada.nextLine();
+		
+		int idade = entrada.nextInt();
+		
+		System.out.printf("%s %s tem %d anos.", 
+				nome, sobrenome, idade);
+		
+		entrada.close();
 	}
 }

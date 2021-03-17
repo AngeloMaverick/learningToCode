@@ -1,0 +1,26 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioConversao {
+	
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Insira o primeiro salário: R$");
+		String n1 = entrada.nextLine();
+		n1 = n1.replace(",", ".");
+		
+		System.out.println("Insira o segundo salário: R$");
+		String n2 = entrada.nextLine();
+		n2 = n2.replace(",", ".");
+		
+		System.out.println("Insira o terceiro salário: R$");
+		String n3 = entrada.nextLine();
+		n3 = n3.replace(",", ".");
+		
+		double media;
+		
+		entrada.close();
+	}
+}
