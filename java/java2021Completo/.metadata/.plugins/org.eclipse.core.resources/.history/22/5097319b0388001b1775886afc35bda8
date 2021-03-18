@@ -1,0 +1,29 @@
+package fundamentos.operadores;
+
+public class DesafioLogicos {
+	
+	public static void main(String[] args) {
+		// Trabalho na terça (V ou F)
+		// Trabalho na quinta (V ou F)
+		
+		// Se os dois trabalhos derem certo: você vai comprar uma televisão de 50pol
+		//no fim de semana.
+		
+		// Se apenas um dos dois trabalho derem certo: || de 32pol no fds.
+		
+		// Se 50pol ou 32pol = sorvete com a família.
+		
+		// Se nenhum dar certo: A família vai ficar em casa.
+		
+		boolean trabalho1 = true;
+		boolean trabalho2 = true;
+		
+		if(trabalho1 && trabalho2) {
+			System.out.println("Compramos a televisão de 50 polegadas e tomamos sorvete!");
+		}else if(trabalho1 || trabalho2){
+			System.out.println("Compramos a televisão de 32 polegadas e tomamos sorvete!");
+		}else {
+			System.out.println("A família ficou em casa");
+		}
+	}
+}
