@@ -1,0 +1,32 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioCalculadora {
+
+	public static void main(String[] args) {
+		// Ler num1
+		// Ler num2
+		// Qual a operação, + - * %
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Insira o primeiro valor: ");
+		String num1 = entrada.nextLine();
+		
+		System.out.println("Insira o segundo valor");
+		String num2 = entrada.nextLine();
+		
+		System.out.println("Escolha uma operação\n "
+				+ "+ ou - ou * ou / ou %");
+		String op = entrada.nextLine();
+		
+		op.equals("+") ? 
+				System.out.println();
+		
+		double numaA = Double.parseDouble(num1);
+		double numaB = Double.parseDouble(num2);
+		
+		entrada.close();
+	}
+}
