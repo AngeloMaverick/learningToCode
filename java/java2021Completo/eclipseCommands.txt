@@ -13,3 +13,4 @@ CTRL+SHIFT+F6         ---> Muda de aba
 CTRL+SHIFT+F7         ---> Muda pro Package Explorer
 CTRL+SHIFT+F8         ---> Muda perspectiva
 CTRL+D                ---> Apaga a linha toda
+CTRL+SHIFT+[L]x2 --> Preferences Keys

@@ -1,10 +1,18 @@
 package fundamentos.exercicios;
 
+import java.util.Scanner;
+
 public class Exercicio01 {
 	
 	public static void main(String[] args) {
-		double celsius = 16;
+		//CELSIUS PARA FAHRENHEIT
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Insira a temperatura em Celsius: ");
+		double celsius = entrada.nextDouble();
 		double fahrenheit = (1.8 * celsius) + 32;
-		System.out.println(fahrenheit + "F°");
+		System.out.printf("Resultado em Fahrenheit: %.2fF°", fahrenheit);
+		
+		entrada.close();
 	}
 }

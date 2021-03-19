@@ -1,0 +1,10 @@
+package fundamentos.exercicios;
+
+public class Exercicio02 {
+	
+	public static void main(String[] args) {
+		double fahrenheit = 17;
+		double celsius = (fahrenheit - 32) / 1,8;
+		System.out.println(celsius + "C°");
+	}
+}

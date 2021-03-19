@@ -1,0 +1,16 @@
+package fundamentos.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio01 {
+	
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		double celsius = entrada.nextDouble();
+		double fahrenheit = (1.8 * celsius) + 32;
+		System.out.println(fahrenheit + "F°");
+		
+		entrada.close();
+	}
+}
