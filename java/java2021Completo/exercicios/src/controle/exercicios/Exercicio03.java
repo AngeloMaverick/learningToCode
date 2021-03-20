@@ -1,0 +1,36 @@
+package controle.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio03 {
+
+	public static void main(String[] args) {
+		// Criar um programa que receba duas notas parciais,
+		// calcular a média final. Se a nota do aluno for
+		// maior ou igual a 7.0 imprime no console "Aprovado",
+		// se a nota for menor que 7.0 e maior do que 4.0
+		// imprime no console "Recuperação", caso contrário
+		// imprime no console "Reprovado".
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Insira a primeira nota parcial: ");
+		float n1 = entrada.nextFloat();
+
+		System.out.println("Insira a segunda nota parcial: ");
+		float n2 = entrada.nextFloat();
+
+		float media = (n1 + n2) / 2;
+		System.out.println("Média final: " + media);
+
+		if (media >= 7) {
+			System.out.println("Aprovado");
+		} else if (media < 7 && media > 4) {
+			System.out.println("Recuperação");
+		} else {
+			System.out.println("Reprovado");
+		}
+
+		entrada.close();
+	}
+}

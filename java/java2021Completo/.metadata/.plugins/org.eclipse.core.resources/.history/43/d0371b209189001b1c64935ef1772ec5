@@ -1,0 +1,25 @@
+package controle.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		// Criar um programa que receba um número
+		// e verifique se ele está entre o 0 e 10 e é par
+
+		Scanner entrada = new Scanner(System.in);
+
+		int num = entrada.nextInt();
+
+		if (num >= 0 || num <= 10) {
+			System.out.println("O número digitado está entre o 0 e 10");
+		}
+		
+		if(num % 2 == 0) {
+			System.out.println("O número digitado é par");
+		}
+
+		entrada.close();
+	}
+}

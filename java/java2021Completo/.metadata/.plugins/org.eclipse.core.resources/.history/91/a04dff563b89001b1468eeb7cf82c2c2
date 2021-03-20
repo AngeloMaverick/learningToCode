@@ -1,0 +1,13 @@
+package controle;
+
+public class WhileDeterminado {
+
+	public static void main(String[] args) {
+		
+		int
+		
+		while(exp <- true ou false) {
+			System.out.println("Bom dia!");
+		}
+	}
+}

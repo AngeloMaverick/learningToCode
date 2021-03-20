@@ -1,0 +1,8 @@
+package controle.exercicios;
+
+public class Exercicio06 {
+	
+	public static void main(String[] args) {
+		//Jogo da Adivinhação
+	}
+}

@@ -1,0 +1,28 @@
+package controle.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		// Criar um programa que informa se o ano atual
+		// é um ano bissexto
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Informe o ano atual: ");
+		int ano = entrada.nextInt();
+
+		if (ano % 4 == 0) {
+			if(ano % 100 == 0) {
+				//Etapa 3
+			} else {
+				//Etapa 4
+			}
+		} else {
+			// Etapa 5
+		}
+
+		entrada.close();
+	}
+}
