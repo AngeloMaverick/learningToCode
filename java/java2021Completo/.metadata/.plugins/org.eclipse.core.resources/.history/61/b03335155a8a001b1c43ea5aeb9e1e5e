@@ -1,0 +1,15 @@
+package classe;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		Data aniversario = new Data();
+		aniversario.dia = 14;
+		aniversario.mes = 02;
+		aniversario.ano = 1998;
+		
+		var natal = new Data();
+		
+		System.out.println(aniversario.ano);
+	}
+}
