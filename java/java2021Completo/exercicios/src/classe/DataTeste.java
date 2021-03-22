@@ -4,19 +4,20 @@ public class DataTeste {
 	
 	public static void main(String[] args) {
 		Data aniversario = new Data();
-		aniversario.dia = 14;
-		aniversario.mes = 2;
-		aniversario.ano = 1998;
+		//aniversario.dia = 14;
+		//aniversario.mes = 2;
+		//aniversario.ano = 1998;
 		
-		var natal = new Data();
-		natal.dia = 25;
-		natal.mes = 12;
-		natal.ano = 00;
+		var natal = new Data(25, 12, 00);
+		//natal.dia = 25;
+		//natal.mes = 12;
+		//natal.ano = 00;
 		
-		System.out.printf("%d/%d/%d\n",
-				aniversario.dia, aniversario.mes, aniversario.ano);
+		System.out.println(aniversario.obterDataFormatada());
 		
-		System.out.printf("%d/%d/%d",
-				natal.dia, natal.mes, natal.ano);
+		System.out.println(natal.obterDataFormatada());
+		
+		aniversario.imprimirDataFormatada();
+		natal.imprimirDataFormatada();
 	}
 }

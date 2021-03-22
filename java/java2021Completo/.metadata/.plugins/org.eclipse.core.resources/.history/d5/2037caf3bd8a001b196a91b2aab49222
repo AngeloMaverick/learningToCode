@@ -1,0 +1,34 @@
+package classe;
+
+public class Produto {
+
+	String nome;
+	double preco;
+	static double desconto;
+	
+	//Nome da loja é 25% de desconto
+	//Quando um desconto é aplicado ele é aplicado para todos os produtos
+	//Por padrão o desconto é 25%
+	//Natal, Dia das Mães, pode colocar 30 e 35%
+	
+	//Construtor padrão
+	Produto() {
+
+	}
+
+	//Construtor Explícito
+	Produto(String nomeInicial, double precoInicial,
+			double descontoInicial) {
+		nome = nomeInicial;
+		preco = precoInicial;
+		desconto = descontoInicial;
+	}
+
+	double precoComDesconto() {
+		return preco * (1 - desconto);
+	}
+
+	double precoComDesconto(double descontoDoGerente) {
+		return preco * (1 - desconto + descontoDoGerente);
+	}
+}
