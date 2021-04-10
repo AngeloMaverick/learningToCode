@@ -1,0 +1,13 @@
+package classe.desafioModulo;
+
+public class Comida {
+	String nome;
+	double peso;
+	
+	// Quando você passar o objeto comida
+	//para o método comer de dentro da pessoa
+	// Você vai pegar o peso da comida e 
+	//acrescentar para o peso da pessoa.
+	
+	//Depois que você chamar o método comer
+}

@@ -1,0 +1,10 @@
+package classe.desafioModulo;
+
+public class Pessoa {
+	String nome;
+	double peso;
+	
+	void comer(Object comida) {
+		this.peso += comida.peso;
+	}
+}
