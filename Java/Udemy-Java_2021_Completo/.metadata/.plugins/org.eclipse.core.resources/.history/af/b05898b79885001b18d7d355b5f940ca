@@ -1,0 +1,17 @@
+package fundamentos;
+
+public class AnotacoesTiposPrimitivos {
+	/* TIPO PRIMITIVOS
+	 * 8 TIPOS
+	 * 
+	 * BYTE = 1 Byte
+	 * SHORT = 2 Bytes
+	 * INT = 4 Bytes
+	 * LONG = 8 Bytes
+	 * 
+	 * BYTE -> -128 até +127
+	 * SHORT -> +- 32.767
+	 * INT -> ...
+	 * LONG -> ...
+	 */
+}

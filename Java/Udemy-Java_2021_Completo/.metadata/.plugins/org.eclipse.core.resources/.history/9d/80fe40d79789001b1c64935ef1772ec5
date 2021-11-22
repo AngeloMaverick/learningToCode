@@ -1,0 +1,14 @@
+package controle.exercicios;
+
+import java.util.Random;
+
+public class Exercicio06 {
+	
+	public static void main(String[] args) {
+		//Jogo da Adivinhação
+		
+		Random random = new Random(); //Declaração Random
+		int numero = random.nextInt(100); //Delimitando
+		System.out.println(numero);
+	}
+}

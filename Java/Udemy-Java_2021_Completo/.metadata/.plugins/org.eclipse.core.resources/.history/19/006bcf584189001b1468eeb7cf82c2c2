@@ -1,0 +1,24 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+	
+	public static void main(String[] args) {
+		
+		/* media das notas de uma turma
+		 * não sei quantos alunos tem
+		 * o usuario vai digitar uma nota de 10 a 0
+		 * variavel total adicionandooo
+		 * variavel quantasnotasvalidas ++
+		 * variavel media
+		 * sair digitando -1
+		*/
+		
+		Scanner entrada = new Scanner(System.in);
+
+		
+
+		entrada.close();
+	}
+}

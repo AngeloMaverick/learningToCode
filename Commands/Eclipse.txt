@@ -1,0 +1,20 @@
+==============[ECLIPSE COMMANDS]==============
+CTRL+SHIFT+F11        --> RUN
+CTRL+SHIFT+[F]        --> Indenta
+ALT+SHIFT+[R]         --> Rename
+CTRL+[M]              --> Maximiza/minimiza o código
+CTRL+[/]              --> Comenta a seleção 
+CTRL+SHIFT+[S]        --> Salva
+ALT+[CIMA/BAIXO]      --> Move a linha de código
+CTRL+ALT+[CIMA/BAIXO] --> Copia a linha de código e cola em uma nova linha abaixo
+CTRL+SHIFT+[O]        --> Organiza os Imports, retirando os que não estão sendo usados e dando dicas de quais precisam ser usados.
+F6(Debug)             --> Executa a próxima linha
+F8(Debug)             --> Ir até o próximo BreakPoint
+Selecionar expressão && CTRL+SHIFT+[I] (Debug) --> Inspeção se no momento é verdadeirou ou falso
+CTRL+SHIFT+F6         --> Muda de aba
+CTRL+SHIFT+F7         --> Muda pro Package Explorer
+CTRL+SHIFT+F8         --> Muda perspectiva
+CTRL+D                --> Apaga a linha toda
+CTRL+SHIFT+[L]x2      --> Preferences Keys
+
+Preferences/Java/Editor/Templates --> Adiciona novos atalhos CTRL+[ESPAÇO] na IDE

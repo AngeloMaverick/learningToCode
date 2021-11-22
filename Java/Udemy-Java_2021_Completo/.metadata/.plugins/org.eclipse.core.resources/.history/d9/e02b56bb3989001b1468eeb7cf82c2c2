@@ -1,0 +1,37 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioDiaSemana {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Insira um dia da Semana: ");
+		String diaSemana = entrada.nextLine();
+		System.out.println(diaSemana);
+
+		if (diaSemana.equals("Domingo") || diaSemana.equals("domingo")) {
+			System.out.println("1");
+		}else if (diaSemana == "Segunda" || diaSemana == "segunda") {
+			System.out.println("2");
+		}else if (diaSemana == "Terça" || diaSemana == "terça") {
+			System.out.println("3");
+		}else if (diaSemana == "Quarta" || diaSemana == "quarta") {
+			System.out.println("4");
+		}else if (diaSemana == "Quinta" || diaSemana == "quinta") {
+			System.out.println("5");
+		}else if (diaSemana == "Sexta" || diaSemana == "sexta") {
+			System.out.println("6");
+		}else if (diaSemana == "Sábado" || diaSemana == "sábado") {
+			System.out.println("7");
+		}else {
+			System.out.println("Você digitou errado");
+		}
+
+		entrada.close();
+		// Domingo -> 1
+		// Quarta -> 4
+		// Terça - 3
+		// etc
+	}
+}

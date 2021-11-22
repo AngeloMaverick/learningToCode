@@ -1,0 +1,9 @@
+package controle.exercicios;
+
+public class Exercicio09 {
+	
+	public static void main(String[] args) {
+		//Crie um programa que recebe 10 valores e
+		//ao final imprima o maior número
+	}
+}

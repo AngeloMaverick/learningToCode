@@ -1,0 +1,15 @@
+package fundamentos;
+
+public class ConversaoTipoPrimitivoNumerico {
+	
+	public static void main(String[] args) {
+		
+		double a = 1;
+		// conversão implícita (impossível perder informações)
+		System.out.println(a);
+		
+		float b = 1.123456788888f; 
+		// CAST = conversão explícita (Há probabilidade de perder informações)
+		System.out.println(b);
+	}
+}

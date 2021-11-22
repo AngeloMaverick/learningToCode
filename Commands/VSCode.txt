@@ -1,0 +1,4 @@
+==============[VSCODE COMMANDS]==============
+ALT+SHIFT+[F]                --> Organiza o código padrão VSCode
+(selecionado) ALT+SHIFT+[↓]  --> Copia e colar logo abaixo da seleção
+(selecionado) ALT+[↓]        --> Vai jogando a selação de linha em linha

@@ -1,9 +1,0 @@
-package controle.exercicios;
-
-public class Exercicio02 {
-	
-	public static void main(String[] args) {
-		//Criar um programa que informa se o ano atual
-		//é um ano bissexto
-	}
-}

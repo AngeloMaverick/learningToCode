@@ -1,0 +1,25 @@
+package fundamentos;
+
+public class TipoString {
+	public static void main(String[] args) {
+		System.out.println("Olá pessoal".charAt(2));//Selecionar uma posição
+		
+		String s = "Boa tarde";
+		System.out.println(s.concat("!!!"));
+		System.out.println(s + "!!!");
+		System.out.println(s.startsWith("Boa")); //Inicia com "Boa"? True
+		System.out.println(s.startsWith("boa")); //Inicia com "boa"(minúsculo) False
+		System.out.println(s.toLowerCase().startsWith("boa")); //True
+		System.out.println(s.endsWith("noite")); //Termina com "noite"? False
+		System.out.println(s.toUpperCase().endsWith("TARDE")); //True
+		System.out.println(s.length()); //9
+		System.out.println(s.equals("boa tarde")); //false
+		System.out.println(s.equalsIgnoreCase("boa tarde")); //Ignora Maiúsculo ou Minúsculo True
+		
+		var nome = "Pedro";
+		var sobrenome = "Santos";
+		var idade = 33;
+		var salario = 12345.987;
+		System.out.println("Nome: " + nome + "\nSobrenome: " + sobrenome + " \nIdade: " + idade + " \nSalário: " + salario);
+	}
+}
