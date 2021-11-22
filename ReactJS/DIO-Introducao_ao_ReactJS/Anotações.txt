@@ -1,0 +1,135 @@
+Digital Innovation One
+
+-> Introdução ao ReactJS
+	Conheça a tecnologia ReactJS
+		1. [História e Conceitos]
+		2. [Configuração]
+		3. [O que é JSX?]
+		4. [Renderização]
+		5. [Componentes e Props]
+		6. [Estado e Ciclo de Vida]
+		7. [Ecossistema]
+
+		-Requisitos Básicos
+		✓[JavaScript]
+		✓[CSS]
+		✓[HTML]
+		✓[Editor de Texto]
+		✓[NPM]
+
+		-História e Conceitos
+		"Uma biblioteca JavaScript para criar interfaces de usuário" -Reactjs
+		Versão atual 16.8.6
+		Criado em 2011 por Jordan Walke no Facebook;
+		Baseado no XHP, um framework para criação de HTML no PHP;
+		Utilizado no mural de notícias da ferramentas ...
+
+		2012 - Utilizado no Instagram
+		2013 - Anúncio para liberação OpenSource na JSConf US
+		2015 - React Native
+		2015 - UWP (Universal Windows Platform)
+
+		React é uma biblioteca e não um framework;
+		A principal função é a criação da interface para o usuário.
+
+		Web Frameworks (StackOverflow)
+		1. JQuery             48.7%
+		2. React.js           31.3%
+		3. Angular/Angular.js 30.7%
+
+		Programming, Scripting, and Markup Languages (StackOverflow)
+		1. JavaScript 67.8%
+		2. HTML/CSS   63.5%
+		3. SQL        54.4%
+
+		React é uma linguagem declarativa.
+		Declarativa Vs Imperativa.
+		O React está preocupado apenas com o que é exibido na interface do usuário.
+
+		React é baseado em componentes.
+		Pode ser utilizado em qualquer lugar.
+
+		Empresas que utilizam React:
+		The New York Times, Facebook, Instagram, Nubank, LuizaLabs, Netflix, IFood, Atlassian, AirBnb
+
+	Aprenda a configurar o ReactJS
+		-Configuração
+		React Create App
+		React Scripts
+		Task Runners e Bundler Sizers
+
+		• Abrir terminal Linux
+		• Ir em uma pasta onde ficará o projeto
+		• npm init
+		• Enter em tudo
+		• yes
+		• npm install --save react@16.8.6 react-dom@16.8.6 react-scripts@3.0.1
+		• ll
+		• code .
+
+		...
+
+		-O que é JSX
+		const element = <h1>Hello, world!</h1>;
+		Nem HTML e nem uma string!
+
+		React não separa as tecnologias colocando marcação em arquivos separados, e sim separa conceitos e mantém o código pouco acoplado chamando-os de componentes.
+		Não é obrigatório a utilização do JSX.
+		Sintax Suggar para React.createElement
+
+		O browser não interpreta o JSX, para isso é necessário um transpilador para que a aplicação possa entender o código. O mais utilizado é o Babel.
+
+		...
+		• npm start
+		...
+	
+	Renderizando elementos
+		-Renderização
+		Renderização de Elementos;
+		React DOM;
+		Nós Raíz.
+
+		React "pensa" em como a interface deve estar a cada momento ao invés de alterá-la com o tempo, o que faz ter ganho de performance e evita uma série de erros.
+
+		...
+		• npx create-react-app "nome"
+		...
+		• npm start
+		...
+	
+		-Componentes e Props
+		Função e Classe;
+		Props;
+		Composição de Componentes;
+		Extração de Componentes
+
+		...
+		• npx create-react-app "nome"
+		...
+		• npm start
+		...
+
+	Conheça os ecossistemas do ReactJS
+		-Estado e Ciclo de Vida
+		Inicialização
+		Montagem
+		Atualização
+		Desmontagem
+
+		Inicialização ->|      Montagem     ->|                             Atualização                           ->|     Desmontagem
+		props e state   | componentWillMount⇩ |          props                   |              state               | componentWillUnmount
+		                | render⇩             | componentWillReceiveProps⇩       |                                  |
+						| componentDidMount⇩  | shouldComponentUpdate [SIM⇩/NÃO] | shouldComponentUpdate [SIM⇩/NÃO] |
+						                      | componentWillUpdate⇩             | componentWillUpdate⇩             |
+											  | render⇩                          | render⇩                          |
+											  | componentDidUpdate               | componentDidUpdate               |
+
+		Nenhum componente pai ou filho devem saber se outro componente possui estado ou não.
+		O estado é apenas local ao componente e caso seja necessário enviar algum atributo para outro então é feito via props.
+		                         
+
+		
+
+-- Aula 04 | 00:27 / 18:00
+
+
