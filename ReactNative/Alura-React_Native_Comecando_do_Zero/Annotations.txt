@@ -1,0 +1,19 @@
+-- Alura
+-- React Native: Começando do Zero
+Natalia Kelim Thiel
+	
+	[01 - Apresentação]
+	Está começando ou busca simplicidade?
+	• Saiba antes apenas o básico de JavaScript
+	• Instale somente Node.js e um editor simples
+	• Rode no seu celular Android ou iOS
+
+	Conceitos Básicos de React Native
+	• Componentes do React Native:
+		○ Textos, imagens e botões
+	• Criar componentes e estilizar
+	• Listas otimizadas
+	• Utilizar Google Fontes
+	
+
+	
