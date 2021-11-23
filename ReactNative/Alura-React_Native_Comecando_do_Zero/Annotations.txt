@@ -14,6 +14,13 @@ Natalia Kelim Thiel
 	• Criar componentes e estilizar
 	• Listas otimizadas
 	• Utilizar Google Fontes
+
+	[02 - React Native e Expo]
+	reactnative.dev/docs/environment-setup
+
+	• Expo CLI Quickstart
+
+	npm install -g expo-cli
 	
 
 	
