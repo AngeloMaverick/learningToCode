@@ -15,12 +15,22 @@ Natalia Kelim Thiel
 	• Listas otimizadas
 	• Utilizar Google Fontes
 
+-----------------------------------------------------
+	
 	[02 - React Native e Expo]
 	reactnative.dev/docs/environment-setup
 
 	• Expo CLI Quickstart
 
 	npm install -g expo-cli
-	
 
+-----------------------------------------------------
 	
+	[03 - Preparando o ambiente: Instalando o Node.js]
+
+	https://nodejs.org/download/release/v14.17.2/
+	• Fazer download do .msi
+	• npm install -g node@14.17.2
+	• node --version
+	• npm install -g npm@7.19.1
+	• npm -v	
