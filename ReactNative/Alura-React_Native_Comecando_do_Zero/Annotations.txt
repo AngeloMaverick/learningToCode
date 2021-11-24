@@ -33,4 +33,11 @@ Natalia Kelim Thiel
 	• npm install -g node@14.17.2
 	• node --version
 	• npm install -g npm@7.19.1
-	• npm -v	
+	• npm -v
+
+-----------------------------------------------------
+	
+	[04 - Preparando o ambiente: Instalando o Expo]
+
+	• npm install --global expo-cli@4.7.2
+	• Instalar o app Expo no celular
