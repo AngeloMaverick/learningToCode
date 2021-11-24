@@ -41,3 +41,12 @@ Natalia Kelim Thiel
 
 	• npm install --global expo-cli@4.7.2
 	• Instalar o app Expo no celular
+	(Melhor forma de instalar: yarn global add expo-cli)
+
+-----------------------------------------------------
+
+	[05 - Criação da aplicação]
+
+	• expo init orgs-cesta
+	Choose blank
+
