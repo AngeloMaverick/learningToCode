@@ -120,6 +120,15 @@ COPIE A CHAVE DE ACESSO
 GITHUB --> SETTINGS --> SSH and GPG keys
 New SSH key --> Cole a chave e dê um título com o nome da máquina
 
+APAGAR COMMIT NO GITHUB
+Se for o ultimo commit faça:
+git rebase -i HEAD~2
+
+Apague a segunda linha dentro do VIM e digite o seguinte comando para salvar e sair:
+:wq
+
+git push origin branchName --force
+
 
 
 
