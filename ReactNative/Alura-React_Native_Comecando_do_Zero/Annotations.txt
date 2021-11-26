@@ -1,8 +1,11 @@
 -- Alura
 -- React Native: Começando do Zero
 Natalia Kelim Thiel
-	
+
+[01. Criando o projeto]
+
 	[01 - Apresentação]
+
 	Está começando ou busca simplicidade?
 	• Saiba antes apenas o básico de JavaScript
 	• Instale somente Node.js e um editor simples
@@ -18,6 +21,7 @@ Natalia Kelim Thiel
 -----------------------------------------------------
 	
 	[02 - React Native e Expo]
+
 	reactnative.dev/docs/environment-setup
 
 	• Expo CLI Quickstart
@@ -66,3 +70,30 @@ Natalia Kelim Thiel
 
 -----------------------------------------------------
 
+	[08 - Faça como eu fiz: Um projeto com Expo]
+
+-----------------------------------------------------
+
+	[09 - Para saber mais: Limitações do Expo]
+
+	Lista de limitações do Expo: https://docs.expo.dev/introduction/why-not-expo/
+	(Sempre se atentar a isso ao criar um project React-Native com Expo!!!)
+
+-----------------------------------------------------
+
+	[10 - O que aprendemos?]
+
+	• Preparar o ambiente
+	• Diferenças entre React Native CLI e Expo CLI
+	• Criar um aplicativo Expo do Zero
+	• Função live reload
+
+-----------------------------------------------------
+
+[2. Componentes e estilos]
+
+	[01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+	[02 - Componente e função]
