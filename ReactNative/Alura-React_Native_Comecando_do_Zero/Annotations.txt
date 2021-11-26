@@ -56,4 +56,13 @@ Natalia Kelim Thiel
 
 	• npm start OU expo start
 
+-----------------------------------------------------
+
+	[07 - React Native vs Expo]
+
+	Utilizando o Expo não precisamos instalar o ambiente Java com Android Studio ou Xcode, pois ele é enviado diretamente ao aplicativo do Expo instalado no celular que já inclui os códigos nativos necessários.
+
+	Os aplicativos criados com o Expo em geral ocupam um pouco mais de espaço no celular do que aplicativos criados da forma tradicional em React Native, pois o expo já mantém todos os recursos necessários em caso de atualizações OTA.
+
+-----------------------------------------------------
 
