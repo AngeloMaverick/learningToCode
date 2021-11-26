@@ -50,3 +50,10 @@ Natalia Kelim Thiel
 	• expo init orgs-cesta
 	Choose blank
 
+-----------------------------------------------------
+
+	[06 - Rodando a aplicação]
+
+	• npm start OU expo start
+
+
