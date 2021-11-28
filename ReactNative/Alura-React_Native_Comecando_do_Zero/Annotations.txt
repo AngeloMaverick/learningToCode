@@ -97,3 +97,29 @@ Natalia Kelim Thiel
 -----------------------------------------------------
 
 	[02 - Componente e função]
+
+-----------------------------------------------------
+
+	[03 - Para saber mais: Componente de classe]
+
+	Também é possível criar componentes com base em classes.
+	Ainda hoje, é possível utilizar essa forma de criação de componentes. Porém, ela é bem menos usada, pois impossibilita a utilização de algumas funcionalidades recentes do React Native.
+
+-----------------------------------------------------
+
+	[04 - Preparando o ambiente: Download das imagens]
+
+	https://github.com/alura-cursos/react-native-comecando-do-zero/blob/main/assets.zip
+
+-----------------------------------------------------
+
+	[05 - Imagem e estilos]
+
+	<StatusBar />   --> O conteúdo fica abaixo da StatusBar preta
+    <SafeAreaView>  --> No iOS, a barra de cima e barra virtual de baixo vão ser evitadas pelo conteúdo do aplicativo. Criando uma margin por fora.
+
+	<Image source={} style={} />                   --> Inserindo Imagem
+	const estilos = StyleSheet.create              --> Criação de estilos de um componente
+	
+	const width = Dimensions.get('screen').width;  --> Pega a largura do celular utilizado
+	height: 578 / 768 * width,                     --> altura da imagem / largura da imagem * largura do celular = A altura da imagem irá se adequar de acordo com a largura da tela do celular.
