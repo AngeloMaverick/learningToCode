@@ -130,3 +130,49 @@ Natalia Kelim Thiel
 
 	flexDirection: "row"             --> Deixa o conteúdo em linha
 	flexDirection: "column" (Padrão) --> Deixa o conteúdo em coluna
+
+-----------------------------------------------------
+
+	[07 - Fonte externa]
+
+	Instalando a font Montserrat do Google Fonts pelo Expo
+	• expo install expo-font @expo-google-fonts/montserrat
+
+-----------------------------------------------------
+
+	[08 - Componentes]
+
+	Assim podemos criar um componente em forma de função. Precisamos importar o React, mesmo que não usamos, para que possamos adicionar as TAGs. Então apenas exportar uma função retornando os componentes, também importados, como se fosse um XML.
+
+	Podemos retornar apenas o Text sem nenhuma View, mas precisamos nos atentar que textos sempre precisam estar entre TAGs Text!
+
+-----------------------------------------------------
+
+	[09 - Estilos]
+
+	Podemos criar estilos no mesmo arquivo dos componentes sem nenhum problema, é até recomendado que façamos isso para que os estilos não possam ser reutilizados por outro componente e criem problemas ao fazer alterações.
+
+-----------------------------------------------------
+
+	[10 - Faça como eu fiz]
+
+-----------------------------------------------------
+
+	[11 - O que aprendemos?]
+
+	• Utilizar componentes
+	• Criar componentes
+	• Estilizar componentes
+	• Fonte externa
+
+-----------------------------------------------------
+
+[3. Refatorando]
+
+	[01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+	[02 - Componente de texto]
+
+	style?.fontWeight === 'bold' --> Se existir o style ele faz a comparação, se não existir ele ignora a sentença
