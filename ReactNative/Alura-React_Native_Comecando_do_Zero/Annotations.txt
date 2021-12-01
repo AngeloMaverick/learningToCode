@@ -176,3 +176,14 @@ Natalia Kelim Thiel
 	[02 - Componente de texto]
 
 	style?.fontWeight === 'bold' --> Se existir o style ele faz a comparação, se não existir ele ignora a sentença
+
+-----------------------------------------------------
+
+	[03 - Cesta componentizada]
+
+-----------------------------------------------------
+
+	[04 - Textos generalizados]
+
+	<Cesta {...mock} /> É IGUAL A
+	<Cesta topo={mock.topo} detalhes={mock.detalhes} />	
