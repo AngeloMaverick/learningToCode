@@ -187,3 +187,50 @@ Natalia Kelim Thiel
 
 	<Cesta {...mock} /> É IGUAL A
 	<Cesta topo={mock.topo} detalhes={mock.detalhes} />	
+
+-----------------------------------------------------
+
+	[05 - Para saber mais: Mocks]
+
+	Os mocks na programação geralmente são utilizados em testes automatizados como forma de substituir as funções originais para que os dados reais não sejam afetados pelos testes.
+
+-----------------------------------------------------
+
+	[06 - AppLoading e revisão]
+
+	• Splash Screen
+	$ expo install expo-app-loading
+	<AppLoading />
+
+-----------------------------------------------------
+
+	[07 - Parâmetros]
+
+	Para capturar o texto (ou mesmo outros componentes) que passamos dentro da chamada do componente, como “filhos” do componente, usamos a propriedade children (que quer dizer “filhos” em inglês).
+
+	Quando desconstruímos o objeto ({...objeto}) removemos a camada exterior dele, passando o texto como parâmetro do componente, que equivale a: <MeuComponente texto={objeto.texto} />. Dessa forma, acessar o texto como parâmetro dentro do componente vai funcionar.
+
+-----------------------------------------------------
+
+	[09 - Faça como eu fiz]
+
+-----------------------------------------------------	
+
+	[10 - O que aprendemos?]
+	
+	• Reutilizar componentes
+	• Usar parâmetros
+	• Desconstruir objetos
+	• Estender o tempo da splash screen
+
+-----------------------------------------------------
+
+[3. Botão e lista]
+
+	[01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+	[02 - Preparando o ambiente: Lista de itens]
+
+-----------------------------------------------------
