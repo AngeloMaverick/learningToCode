@@ -234,3 +234,18 @@ Natalia Kelim Thiel
 	[02 - Preparando o ambiente: Lista de itens]
 
 -----------------------------------------------------
+
+	[03 - Botão de compra]
+
+	Button --> Botão simples (no Android aparece como padrão Android, no iOS aparece como padrão iOS)
+	TouchableOpacity --> Clickável que tem opacidade ao clicar
+	TouchableWithoutFeedback --> Clickável sem efeito CSS
+	reactnative.dev --> documentação online
+	
+-----------------------------------------------------
+
+	[04 - Reaproveitando o botão]
+
+	A proposta deste desafio é que você isole o botão em um componente dentro da pasta src/componentes, e, assim, esse botão poderá ser reutilizado, seguindo os conceitos que utilizamos.
+
+	-- A realizar.
