@@ -248,4 +248,4 @@ Natalia Kelim Thiel
 
 	A proposta deste desafio é que você isole o botão em um componente dentro da pasta src/componentes, e, assim, esse botão poderá ser reutilizado, seguindo os conceitos que utilizamos.
 
-	-- A realizar.
+-----------------------------------------------------
