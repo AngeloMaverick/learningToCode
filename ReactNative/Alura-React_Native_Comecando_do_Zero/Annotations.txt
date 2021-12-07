@@ -225,7 +225,7 @@ Natalia Kelim Thiel
 
 -----------------------------------------------------
 
-[3. Botão e lista]
+[4. Botão e lista]
 
 	[01 - Projeto da aula anterior]
 
@@ -249,3 +249,18 @@ Natalia Kelim Thiel
 	A proposta deste desafio é que você isole o botão em um componente dentro da pasta src/componentes, e, assim, esse botão poderá ser reutilizado, seguindo os conceitos que utilizamos.
 
 -----------------------------------------------------
+
+	[05 - Componente de lista]
+
+	{lista.map(({ nome, imagem }) => { --> O método map dentro dos arrays percorre cada elemento da lista onde podemos alterar ele e retornar uma nova lista.
+	<ScrollView> --> COMPONENTE rolável 
+	<View key={nome}> --> Ao se trabalhar com manipulação de listas deve se inserir uma key (chave única) para cada registro.
+
+-----------------------------------------------------
+
+	[06 - FlatList]
+
+	reactnative.dev/docs/flatlist
+	const renderItem = () => --> Construindo a função dessa forma não há necessidade de ter digitar return para retornar.
+	-- Agora o app somente carrega o que está visível na tela, somente se rolar para baixo ele irá carregar o que irá se mostrado a seguir.
+	<SafeAreaView style={{ flex: 1 }}> --> Para que a SafeAreaView ocupe 100% da tela, não 200%, assim, não carregando mais do que há necessidade.
