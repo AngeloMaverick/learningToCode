@@ -264,3 +264,33 @@ Natalia Kelim Thiel
 	const renderItem = () => --> Construindo a função dessa forma não há necessidade de ter digitar return para retornar.
 	-- Agora o app somente carrega o que está visível na tela, somente se rolar para baixo ele irá carregar o que irá se mostrado a seguir.
 	<SafeAreaView style={{ flex: 1 }}> --> Para que a SafeAreaView ocupe 100% da tela, não 200%, assim, não carregando mais do que há necessidade.
+
+-----------------------------------------------------
+
+	[07 - Lista]
+
+	a FlatList como principal componente já faz o scroll da tela. E, definindo a view principal para ocupar 100% da tela com flex: 1 nos estilos, faz com que apenas os itens visíveis sejam carregados, otimizando assim a nossa aplicação.
+
+-----------------------------------------------------
+
+	[08 - Para saber mais: Eject]
+
+	O Expo permite gerar os arquivos nativos que faltavam para executar no react native puro.
+
+	Esse processo é chamado de eject, e é possível acessar a documentação oficial:
+	https://docs.expo.dev/expokit/eject/
+	É importante que você leia a documentação para entender se você realmente precisa fazer isso.
+
+-----------------------------------------------------
+
+	[09 - Desafio: Aplicando o Eject]  
+
+	Tente ejetar a aplicação e executá-la com React Native puro!
+
+	Para fazer isso, você irá precisar instalar o ambiente Android e/ou iOS nativo. Lembramos que, se você quer executar o iOS nativo, é indispensável que esteja no macOS. Mas, no caso do Android, é possível executá-lo na maioria das plataformas.
+
+	https://www.alura.com.br/artigos/configurando-o-ambiente-react-native?utm_source=gnarus&utm_medium=timeline
+
+	https://docs.expo.dev/expokit/eject/#instructions
+
+	A realizar ...
