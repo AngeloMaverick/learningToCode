@@ -293,4 +293,23 @@ Natalia Kelim Thiel
 
 	https://docs.expo.dev/expokit/eject/#instructions
 
-	A realizar ...
+-----------------------------------------------------
+
+    [10 - Faça como eu fiz]
+
+-----------------------------------------------------
+
+    [11 - Projeto final do curso]
+
+-----------------------------------------------------
+
+    [12 - O que aprendemos?]
+
+    • Button
+    • Botão Customizado
+    • ScrollView
+    • FlatList
+
+-----------------------------------------------------
+
+    [13 - Conclusão]
