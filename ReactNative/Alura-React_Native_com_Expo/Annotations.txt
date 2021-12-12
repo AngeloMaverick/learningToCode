@@ -1,0 +1,137 @@
+-- Alura
+-- React Native com Expo: Navegação com menu e suporte às telas
+Natalia Kelim Thiel
+
+[01. Iniciando o projeto]
+
+	[01 - Apresentação]
+
+    • Projeto com Expo do Zero
+    • Expo <> React Native
+    • App Gatito Pet Shop
+    • Telas
+        1. Serviços
+        2. Carrinho
+    • Navegação
+    • Preparar Telas
+        1. Notched
+        2. Barra inferior iPhone
+        3. Status Bar
+    
+    O que NÃO vamos aprender?
+        • Estilizar componentes
+        • React básico (estados e ciclo de vida)
+        • APIs e Banco de Dados
+
+-----------------------------------------------------
+
+    [02 - Configurando o ambiente]
+
+    • Dowload do LTS do Node.js
+        https://nodejs.org/en/download/
+    
+    • Verificação de existência e versão via CLI
+        $ node --version
+        $ npm --version
+
+    • Instalação Expo CLI
+        $ npm install -g expo-cli
+    
+    • Baixar os assets do app
+        https://github.com/alura-cursos/alura-gatito-static/tree/Aula1/assets
+
+-----------------------------------------------------
+
+    [03 - Expo vs CLI]
+
+    • Coisas que o Expo não consegue fazer
+        Utilizar Bluetooth
+        Utilizar WebRTC
+        In-App Purchases
+        Apple and Google Pay Integration
+        Rodar audios em background
+        Enviar notificações em background
+        entre outras limitações...
+    
+    • Criando o app Expo
+        $ expo init gatito
+        Selecionar a opção blank
+        $ cd gatito
+        $ npm start
+        Opening emulator
+            $ a 
+        Opening App on emulator 
+            $ a 
+
+-----------------------------------------------------
+
+    [04 - Criação do projeto]
+
+    Nessa aula iremos aprender:
+        • Pastas e arquivos que o Expo gera
+        • Alterar o nome da Aplicação
+        • Alterar a Splash Screen
+        • Alterar o ícone
+    
+    • Abrir o projeto no VSCode
+
+    node_modules --> Pasta onde contém todos pacotes da aplicação
+    package.json --> Arquivo onde contém as versões dos pacotes
+    live reload  --> Atualização automática
+    
+    app.json      --> Arquivo que só o Expo tem, não existe na versão react-native original
+        "name":   --> Nome do aplicativo
+        "icon":   --> Endereço da imagem do icone do aplicativo
+        "splash": --> Endereço da imagem da Splash Screen do aplicativo + detalhes
+    
+    • Colocar as imagens baixadas no assets
+    • Apagar sessão "android" e "web" do app.json
+
+-----------------------------------------------------
+
+    [05 - Alterando nome, ícone e splash screen da aplicação]
+
+    O Expo dispõe o arquivo app.json para que possamos configurar o nome, splash e ícone de maneira mais simples.
+
+    Alterarando o name, o slug e o backgroundColor da splash dentro de app.json e substituindo as imagens icon.png e splash.png dentro de assets. Reiniciar a aplicação para ver as alterações.
+
+-----------------------------------------------------
+
+    [06 - Alterando a frase inicial]
+
+    Alterando o App.js, modificamos o nosso único componente da aplicação até agora e não precisamos fechar e abrir a aplicação pois o live reload do react native atualiza automaticamente as alterações feitas em componentes JavaScript.
+
+-----------------------------------------------------
+
+    [07 - Faça como eu fiz: Criação do projeto]
+
+-----------------------------------------------------
+
+    [08 - O que aprendemos?]
+
+    • As diferenças entre um projeto react native utilizando o Expo CLI e outro utilizando o React Native CLI
+    • A criar um projeto e entendemos a estrutura básica dos arquivos gerados, para alterar o componente inicial e vermos as alterações em tempo real
+    • A alterar o nome da aplicação, configurando uma splash screen e mudando o ícone do aplicativo  
+
+-----------------------------------------------------
+
+[2. Primeira tela]
+
+	[01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+	[02 - Tela de serviços]
+
+    export default --> Quando utilizado, somente uma coisa é exportada do arquivo
+    export         --> Quando utilizado, uma ou mais coisas é exportada do arquivo
+    <SafeAreaView> --> Tag para não dar conflito com o header e o footer do iPhone
+    <StatusBar>    --> Tag para não dar conflito com a barra de notificações do Android
+
+-----------------------------------------------------
+
+	[03 - Listagem de serviços]
+
+-----------------------------------------------------
+
+	[04 - Estilos]
