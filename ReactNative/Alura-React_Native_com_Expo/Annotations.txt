@@ -4,7 +4,7 @@ Natalia Kelim Thiel
 
 [01. Iniciando o projeto]
 
-	[01 - Apresentação]
+    [01 - Apresentação]
 
     • Projeto com Expo do Zero
     • Expo <> React Native
@@ -135,3 +135,15 @@ Natalia Kelim Thiel
 -----------------------------------------------------
 
 	[04 - Estilos]
+
+-----------------------------------------------------
+
+	[05 - Correção do Teclado]
+
+    Se ao clicar na quantidade do último item o teclado aparecer e sumir, deve-se utilizar a propriedade removeClippedSubviews={false} na FlatList para que isso não ocorra.
+
+-----------------------------------------------------
+
+	[06 - Add carrinho]
+
+    05:57 / 13:56
