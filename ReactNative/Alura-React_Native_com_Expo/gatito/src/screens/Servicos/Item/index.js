@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-import { View, Text, Button } from 'react-native';
+import { View, Text } from 'react-native';
+import Botao from '../../../components/Botao';
 
 import CampoInteiro from '../../../components/CampoInteiro';
 
@@ -26,7 +27,7 @@ export default function Item({ nome, preco, descricao }) {
                     <Text style={estilos.preco}>0</Text>
                 </View>
             </View>
-            <Button title="Adicionar" />
+            <Botao valor="Adicionar" acao={() => { }} />
         </View>
         <View style={estilos.divisor} />
     </>
