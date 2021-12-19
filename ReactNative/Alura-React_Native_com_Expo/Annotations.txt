@@ -147,3 +147,74 @@ Natalia Kelim Thiel
 	[06 - Add carrinho]
 
 -----------------------------------------------------
+
+    [07 - Moeda, Total e expandir]
+
+    Biblioteca de monetários
+    $ npm install intl
+
+    Intl.NumberFormat('pt-BR', {
+        style: 'currency', currency: 'BRL'
+    }).format(preco) 
+    --> formata a informação de exemplo 56.550008 para R$56,55
+
+-----------------------------------------------------
+
+    [08 - Criando um componente]
+
+    Utilizamos o componente em forma de função ou classe para prevenir problemas de ciclo de aplicação. Precisamos retornar sempre uma única tag principal, que nesse caso é um fragmento, uma tag que apenas agrupa as coisas dentro sem causar nenhum efeito estrutural no componente. Além disso, também precisamos sempre utilizar a tag Text para exibir o texto.
+
+-----------------------------------------------------
+
+    [09 - Faça como eu fiz: Tela de serviços]
+
+-----------------------------------------------------
+
+    [10 - Para saber mais: Class X Function Component]
+
+    O componente em formato de classe era a forma mais comum de criar componentes do React até pouco tempo e ainda funciona. Basicamente consiste em criar uma classe que estende um Component, e dentro dela implementamos métodos para os ciclos de vida do React e para renderizar os componentes na tela.
+
+    import React from 'react'
+    import { Text } from 'react-native'
+    export default class MeuComponente extends React.Component {
+    constructor(props) {
+            super(props)
+            this.state = { texto: 'Alura' }
+        }
+    componentDidMount() {
+        console.log('componente carregado');
+    }
+    render() {
+        return <Text>{this.state.texto}</Text>
+    }
+    }
+
+    A forma de função era menos utilizada pois as funcionalidades de ciclo e estado não podiam ser utilizadas, então era apenas para criar componentes simples que não precisavam delas. Mas com o nascimento dos hooks é possível realizar essas tarefas agora com function components também, mas com uma sintaxe bem diferente. O exemplo anterior utilizando function component ficaria como import de react, dos componentes, exportar uma função e retornar o que quiser que seja renderizado. Para os states usamos o hook useState, e para as funções de ciclo usamos o useEffect.
+
+    import React, {useState, useEffect} from 'react'
+    import { Text } from 'react-native'
+    export default function MeuComponente (props) {
+    const [texto, atualizaTexto] = useState('Alura');
+    useEffect(() => {
+        console.log('componente carregado');  
+    }, []);
+    return  <Text>{texto}</Text>
+    }
+
+    Podemos ver que em formato de função temos as mesmas funcionalidades com uma escrita mais simplificada. Então quando utilizar uma forma ou outra? Basicamente as duas têm a mesma equivalência no fim das contas e, como para poder utilizar a estrutura de hooks precisamos de function components, provavelmente você vai chegar a conclusão de que usar function components é a melhor opção no momento.
+
+-----------------------------------------------------
+
+    [11 - O que aprendemos?]
+
+    • Como criar um componente e utilizá-lo em outro componente
+    • Utilizar SaveAreaView e StatusBar para que nossas telas não sejam sobrepostas aos elementos do dispositivo como a barra de status e barra inferior de gestos do iPhone
+    • Formatar moedas com intl
+
+-----------------------------------------------------
+
+[3. Carrinho]
+
+	[01 - Projeto da aula anterior]
+
+-----------------------------------------------------
