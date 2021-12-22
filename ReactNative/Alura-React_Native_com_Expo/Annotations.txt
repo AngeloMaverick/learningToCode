@@ -218,3 +218,10 @@ Natalia Kelim Thiel
 	[01 - Projeto da aula anterior]
 
 -----------------------------------------------------
+
+	[02 - KeyboardAvoidingView]
+
+    <KeyboardAvoidingView /> --> o teclado não irá ficar por cima da view
+    Platform --> irá informar se a aplicação está rodando em um iOS ou em um Android
+
+-----------------------------------------------------
