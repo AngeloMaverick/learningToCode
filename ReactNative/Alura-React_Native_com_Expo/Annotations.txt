@@ -225,3 +225,7 @@ Natalia Kelim Thiel
     Platform --> irá informar se a aplicação está rodando em um iOS ou em um Android
 
 -----------------------------------------------------
+
+	[03 - Tela do Carrinho]
+
+-----------------------------------------------------
