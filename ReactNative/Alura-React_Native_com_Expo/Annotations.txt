@@ -229,3 +229,9 @@ Natalia Kelim Thiel
 	[03 - Tela do Carrinho]
 
 -----------------------------------------------------
+
+	[04 - Status do Carrinho]
+
+    servicos.reduce((soma, { preco, quantidade }) => soma + (preco * quantidade), 0); --> Simplificação de for com reduce
+
+-----------------------------------------------------
