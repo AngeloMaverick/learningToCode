@@ -235,3 +235,53 @@ Natalia Kelim Thiel
     servicos.reduce((soma, { preco, quantidade }) => soma + (preco * quantidade), 0); --> Simplificação de for com reduce
 
 -----------------------------------------------------
+
+	[05 - Tratando o teclado virtual]
+
+    O campo não fica visível quando está muito abaixo na tela pois o teclado acaba cobrindo-o. Podemos, nestes casos, ajustar a tela para que ele só ocupe o espaço acima do teclado, não deixando áreas inacessíveis.
+
+    Utilizando o componente KeyboardAvoidingView ao redor da nossa tela podemos criar esse ajuste automático para que o teclado não cubra nenhuma parte. O código ainda tem uma diferenciação para android e ios, que está descrita abaixo:
+
+    <KeyboardAvoidingView
+        behavior={Platform.OS == "ios" ? "padding" : "height"}
+        style={{ flex: 1 }}
+        >
+            // Conteúdo da tela
+    </KeyboardAvoidingView>
+
+-----------------------------------------------------
+
+    [06 - Faça como eu fiz: Tela do carrinho]
+
+-----------------------------------------------------
+
+    [07 - O que aprendemos?]
+
+    • Ajustar a tela utilizando KeyboardAvoidingView para que o teclado não sobreponha os campos
+    • Como utilizar o reduce nativo do javascript para agregar valores
+    • Criar um componente padrão para reutilizar sempre que quisermos prevenir os principais problemas de tela em Android e iOS
+
+-----------------------------------------------------
+
+[4. Navegação]
+
+	[01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+    [02 - Versões utilizadas]
+
+    $ npm install @react-navigation/native@5.9.2
+    $ npm install @react-navigation/bottom-tabs@5.11.7
+
+-----------------------------------------------------
+
+    [03 - Navegação básica]
+
+    https://reactnavigation.org/
+
+    $ npm install @react-navigation/native
+    $ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+    $ npm install @react-navigation/bottom-tabs
+
+-----------------------------------------------------
