@@ -285,3 +285,16 @@ Natalia Kelim Thiel
     $ npm install @react-navigation/bottom-tabs
 
 -----------------------------------------------------
+
+    [04 - Estilização Tab Bar]
+
+    Tab.Navigator tabBarOptions={{}} --> Dessa forma é possível estilizar a tab bar
+    activeTintColor         --> Cor quando o botão estiver ativo
+    inactiveTintColor       --> Cor quando o botão estiver inativo
+    activeBackgroundColor   --> BackgroundColor quando estiver ativo
+    inactiveBackgroundColor --> BackgroundColor quando estiver ativo
+    style                   --> Estilo geral do componente
+    labelStyle              --> Estilo das labels dos botões
+    keyboardHidesTabBar     --> Boolean que esconde a tab bar quando o teclado for ativado
+
+-----------------------------------------------------
