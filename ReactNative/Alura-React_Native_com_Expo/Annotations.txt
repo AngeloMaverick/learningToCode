@@ -298,3 +298,47 @@ Natalia Kelim Thiel
     keyboardHidesTabBar     --> Boolean que esconde a tab bar quando o teclado for ativado
 
 -----------------------------------------------------
+
+    [05 - Estilização das bordas]
+
+    Estilização da StatusBar superior e inferior.
+
+-----------------------------------------------------
+
+    [06 - Criando a navegação]
+
+    Utilizamos uma biblioteca chamada React Navigation, com que criamos um arquivo de rotas indicando quais as telas de nossa aplicação e qual o tipo de navegação. Então substituímos a chamada da tela pelas rotas.
+
+    Criamos o arquivo Rotas.js dentro do nosso src para declarar as rotas e o tipo de navegação, então substituímos no App.js a chamada da tela pela chamada do componente Rotas.
+
+-----------------------------------------------------
+
+    [07 - Faça como eu fiz: Criando a navegação]
+
+-----------------------------------------------------
+
+    [08 - O que aprendemos?]
+
+    • Instalamos a biblioteca React Navigation, dependências e tipos de navegação
+    • Configuramos nosso arquivo de rotas
+    • Estilizamos o menu inferior
+
+-----------------------------------------------------
+
+[5. Finalizando o projeto e dicas]
+
+	[01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+    [02 - Dev tools: Reactotron]
+
+    https://github.com/infinitered/reactotron
+    https://github.com/infinitered/reactotron/releases/tag/v2.17.1
+
+    • Instalar Reactotron.Setup.2.17.1.exe
+    --save-dev --> Para instalação somente no ambiente de desenvolvimento
+    $  npm install --save-dev reactotron-react-native
+
+    06:55 / 09:03
+
