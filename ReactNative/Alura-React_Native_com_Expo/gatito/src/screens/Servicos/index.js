@@ -2,7 +2,8 @@ import React from 'react';
 
 import { FlatList } from 'react-native';
 
-import Item from './Item';
+//import Item from './Item';
+import Item from '../../components/Item';
 
 const servicos = [
     {

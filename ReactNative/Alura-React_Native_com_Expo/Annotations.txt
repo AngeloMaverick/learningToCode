@@ -340,5 +340,16 @@ Natalia Kelim Thiel
     --save-dev --> Para instalação somente no ambiente de desenvolvimento
     $  npm install --save-dev reactotron-react-native
 
-    06:55 / 09:03
+-----------------------------------------------------
 
+    [03 - Por que usar o Reactotron]
+
+    Com o Reactotron consigo analisar mais facilmente logs com objetos grandes, pois o Reactotron minimiza os objetos em apenas uma linha, sendo muito mais simples navegar entre os logs. E, caso queira ver um objeto, basta expandir a linha dele.
+
+    Com Reactotron podemos visualizar os logs da nossa aplicação de forma cronológica, como se fosse uma linha do tempo.
+
+-----------------------------------------------------
+
+    [04 - Desafio: Refatore!]
+    
+    Utilizamos alguns arquivos repetidos ou copiados, que tal começar com o Item e fazer dele um único componente reutilizável?

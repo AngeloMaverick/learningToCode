@@ -3,7 +3,8 @@ import React from 'react';
 import { FlatList } from 'react-native';
 
 import StatusCarrinho from '../../components/StatusCarrinho';
-import Item from './Item';
+//import Item from './Item';
+import Item from '../../components/Item';
 
 
 const servicos = [
@@ -38,7 +39,7 @@ export default function Carrinho() {
         <FlatList
             data={servicos}
             removeClippedSubviews={false}
-            renderItem={({ item }) => <Item {...item} />}
+            renderItem={({ item }) => <Item {...item} tela='carrinho' />}
             keyExtractor={({ id }) => String(id)}
         />
     </>

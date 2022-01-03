@@ -7,9 +7,10 @@ import TelaPadrao from './src/components/TelaPadrao';
 import Rotas from './src/Rotas';
 
 Reactotron.configure().useReactNative().connect();
+console.tron = Reactotron;
 
 export default function App() {
-  Reactotron.log("Alura");
+  console.tron.log({ curso: "alura" });
 
   return <TelaPadrao><Rotas /></TelaPadrao>;
 }
