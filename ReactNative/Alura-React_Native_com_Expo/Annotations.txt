@@ -351,5 +351,36 @@ Natalia Kelim Thiel
 -----------------------------------------------------
 
     [04 - Desafio: Refatore!]
-    
+
     Utilizamos alguns arquivos repetidos ou copiados, que tal começar com o Item e fazer dele um único componente reutilizável?
+
+-----------------------------------------------------
+
+    [05 - Faça como eu fiz: Configurando o Reactotron]
+
+    Adicionar Reactotron nos nossos projetos pode ajudar a debugar o código em React Native. Caso queira saber mais sobre, este é o link para o projeto no github: https://github.com/infinitered/reactotron.
+
+-----------------------------------------------------
+
+    [06 - Para saber mais: Visual Studio Code]
+
+    Extensão:
+        Dracula Official
+    
+    Recursos:
+        FiraCode
+        fontLigatures
+
+-----------------------------------------------------
+
+    [07 - Projeto final do curso]
+
+-----------------------------------------------------
+
+    [08 - O que aprendemos?]
+
+    • Instalamos uma dev tool no nosso projeto, o Reactotron. Ele facilita a leitura de logs e requisições, criando uma timeline filtrável com os logs.
+
+-----------------------------------------------------
+
+    [09 - Conclusão]

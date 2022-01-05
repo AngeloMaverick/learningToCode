@@ -1,0 +1,61 @@
+-- Alura
+-- Fundamentos de React: escrevendo com Typescript
+Luiz Fernando Ribeiro
+
+[01. Criando o projeto]
+
+    [01 - Apresentação]
+
+    • Desenvolvendo a aplicação Alura Studies
+
+    • DRY: Don't Repeat Yourself
+    --> Não se repita: Com a criação de componentes não é necessário repetir o código
+
+    • SRP: Single Responsability Principal
+    --> Princípio da responsabilidade única: Cada componente deve ter apenas uma responsabilidade
+
+    • Sass
+    • Css Modules
+    
+    • Props
+    • State
+
+    • Class Component
+    • Function Component
+
+-----------------------------------------------------
+
+    [02 - Preparando o ambiente: Windows]
+
+    • Node.js/npm
+    • Git
+    • Visual Studio Code
+
+-----------------------------------------------------
+
+    [03 - Preparando o ambiente: Linux]
+
+    • ...
+
+-----------------------------------------------------
+
+    [04 - Preparando o ambiente: Mac]
+
+    • Homebrew
+    • ...
+
+-----------------------------------------------------
+
+    [05 - Criando o projeto]
+
+    $ node -v
+    $ npm -v
+
+    https://create-react-app.dev/docs/getting-started
+
+    O create-react-app tem preferência pelo Yarn caso tenha instalado em sua máquina, caso queira utilizar o npm utilizar o comando (--use-npm):
+    $ npx create-react-app alura-studies --template typescript --use-npm 
+    $ cd alura-studies
+    $ npm start
+
+-----------------------------------------------------
