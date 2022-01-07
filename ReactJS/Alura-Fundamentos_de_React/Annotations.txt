@@ -59,3 +59,43 @@ Luiz Fernando Ribeiro
     $ npm start
 
 -----------------------------------------------------
+
+    [06 - Inicializando nosso projeto]
+
+    O comando create-react-app projeto --template typescript cria o projeto com a linguagem TypeScript, o comando cd projeto entra na pasta desse projeto criado e o comando npm start roda o projeto.
+
+-----------------------------------------------------
+
+    [07 - Faça como eu fiz: Criar um projeto typescript com CRA]
+
+    CRA = Create React App
+
+-----------------------------------------------------
+
+    [08 - Entendendo o projeto]
+
+    npm >
+        package-lock.json
+        package.json
+        tsconfig.json
+
+-----------------------------------------------------
+
+    [09 - O que aprendemos?]
+
+    • Configurar o seu ambiente para rodar o projeto
+    • Diferenciar npx de npm
+    • Criar um projeto com create-react-app com template typescript usando npm
+    • O Create React App estrutura o projeto
+
+-----------------------------------------------------
+
+[02. Componentização]
+
+    [01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+    [02 - Criando um componente]
+
+    
