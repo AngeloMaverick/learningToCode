@@ -98,4 +98,22 @@ Luiz Fernando Ribeiro
 
     [02 - Criando um componente]
 
+    robots.txt = O que os robôs do google localizam do nosso site
+
+-----------------------------------------------------
+
+    [03 - Para saber mais: Sobre componentes]
+
+    • Existe uma possibilidade no html de criar web-components, que nos permite criar tags html totalmente customizadas. Entre essas customizações, podemos customizar o nome da tag!
+
+    • Para o React diferenciar um componente de um web-component, ele pede para que criemos um componente com a primeira letra maiúscula, assim ele consegue diferenciar por exemplo que <meuBotao /> é um web-component e <MeuBotao /> é um componente!
+
+-----------------------------------------------------
+
+    [04 - Criando o formulário]
+
+    label htmlFor="id"       --> redireciona para uma tag html ao clicar na label
+    input placeholder="text" --> Texto que aparece antes de começar a digitar
+    
+
     
