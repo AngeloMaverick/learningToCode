@@ -114,6 +114,48 @@ Luiz Fernando Ribeiro
 
     label htmlFor="id"       --> redireciona para uma tag html ao clicar na label
     input placeholder="text" --> Texto que aparece antes de começar a digitar
-    
 
+-----------------------------------------------------
+
+    [05 - Criando a lista]
+
+-----------------------------------------------------
+
+    [06 - Renderizando um array]
+
+-----------------------------------------------------
+
+    [07 - Renderização dinâmica de arrays]
+
+-----------------------------------------------------
+
+    [08 - Faça como eu fiz: Utilizando o map]
+
+-----------------------------------------------------
+
+    [09 - O que aprendemos?]
+
+    • Como funciona a pasta public
+    • Como criar um componente com class component e como utilizá-lo
+    • O que é JSX
+    • Como criar um function component
+    • Como utilizar o método map para renderizar arrays
+
+-----------------------------------------------------
+
+[03. Usando CSS]
+
+    [01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+    [02 - Aprendendo a estilizar]
+
+-----------------------------------------------------
+
+    [03 - Estilizando com Sass]
+
+    https://www.npmjs.com/package/sass
+
+    $ npm install --save-dev sass
     
