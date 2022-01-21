@@ -158,4 +158,17 @@ Luiz Fernando Ribeiro
     https://www.npmjs.com/package/sass
 
     $ npm install --save-dev sass
-    
+
+-----------------------------------------------------
+
+    [04 - Usando CSS Modules]
+
+    https://www.npmjs.com/package/typescript-plugin-css-modules
+
+    $ npm install -D typescript-plugin-css-modules
+
+    • Outra forma de se atribuir um className
+    className={style["novaTarefa_-container]}
+
+
+        
