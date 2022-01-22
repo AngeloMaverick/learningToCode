@@ -167,8 +167,142 @@ Luiz Fernando Ribeiro
 
     $ npm install -D typescript-plugin-css-modules
 
+    • configurar o plugin dentro do arquivo tsconfig.json
+    {
+        "compilerOptions": {
+            …
+            "plugins": [{ "name": "typescript-plugin-css-modules" }]
+        }
+    }
+
     • Outra forma de se atribuir um className
     className={style["novaTarefa_-container]}
 
+-----------------------------------------------------
 
-        
+    [05 - Importando CSS Modules]
+
+-----------------------------------------------------
+
+    [06 - Para saber mais: Sobre CSS Modules]
+
+    • Podemos importar das seguintes formas:
+    import style from './NomeDoComponente.module.scss';
+    import * as style from './NomeDoComponente.module.scss';
+    import { default as style } from './NomeDoComponente.module.scss';
+    import Foo from ./'NomeDoComponente.module.scss;'
+    import Bar from ''./NomeDoComponente.module.scss;
+    import Banana from './NomeDoComponente.module.scss'
+
+    • Podemos também importar vários CSS Modules em um só componente!
+
+    OBS: Todas essas formas citadas acima não são específicas de como importar um CSS Modules, e sim de como importar um export default em JS.
+
+    Caso tenha alguma dúvida leia a documentação do Create React App sobre CSS Modules.
+    https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
+
+-----------------------------------------------------
+
+    [07 - Faça como eu fiz: Transformando CSS em CSS Modules]
+
+    Com o CSS Modules, a classe que seria apenas botao, será {nomeDoArquivoCSS}_{nomeDaClasseCSS}__{hashAleatoria}. É por isso que mudamos nosso arquivo de style.scss para Botao.module.scss, pois isso faz ficar mais evidente na hora da classe ser inspecionada que essa classe vem do componente Botao, fazendo a própria classe ser auto documentada, pois sabemos que é a classe botao vindo do componente Botao.
+
+-----------------------------------------------------
+
+    [08 - O que aprendemos?]
+
+    • Usar o CSS inline
+    • Utilizar CSS e Sass no projeto
+    • Colocar o CSS Modules em um porjeto com Create React App + Typescript
+    • Vantagens de se utilizar CSS Modules
+
+-----------------------------------------------------
+
+[04. Props]
+
+    [01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+    [02 - Conhecendo o Props]
+
+    • Props como atributo
+    class Botao extends React.Component<{texto: string}> {...
+    {this.props.texto}
+
+    • Props como Children
+    {this.props.children}
+
+-----------------------------------------------------
+
+    [03 - Props padrão para filhos]
+
+    o React proporciona a props children para que a gente consiga colocar JSX dentro do componente.
+
+-----------------------------------------------------
+
+    [04 - Faça como eu fiz: Adicionando Props para o Botão]
+
+-----------------------------------------------------
+
+    [05 - Refatorando a lista]
+
+    • Forma 01
+    export default function Item(props: { tarefa: string, tempo: string}) { 
+    const { tarefa, tempo } = props; 
+
+    • Forma 02
+    export default function Item({tarefa, tempo }: { tarefa: string, tempo: string}) { 
+
+    
+    • Forma 01
+    <Item 
+        tarefa={item.tarefa} 
+        tempo={item.tempo}
+    />
+
+    • Forma 02 Obs.: Tomar cuidado ao utilizá-lo!
+    <Item 
+        {...item}
+    />
+
+-----------------------------------------------------
+
+    [06 - Para saber mais: Sobre Keys (Chaves no React)]
+
+    O React não cria um DOM, e sim um VDOM (Virtual DOM).
+
+    O React cria um DOM virtual em memória e só atualiza o DOM real quando algo dentro desse Virtual DOM realmente é atualizado.
+
+    Levando isso em consideração, como o React saberia qual seria a cópia no Virtual DOM do item 45 em um array de 50 itens, por exemplo? Ou pior, se o item 47 for removido, como ele vai saber que o item 48, 49 e 50 não foram atualizados? E os outros?
+
+    Para isso o React utiliza a propriedade keym para linkar o item no Virtual DOM no DOM real, por isso não vemos a prop sendo passada para o componente Item, pois essa prop é algo interno no React que não tem utilidade para nós.
+
+    Por isso também não é recomendado que se utilize o index do array como key, pois caso o array mude, a possibilidade de vários itens desse array serem atualizados sem necessidade é imensa!       
+
+-----------------------------------------------------
+
+    [07 - Criando o cronômetro]
+
+    Burlando o problema de elemento pai
+
+    • Forma 01
+    <React.Fragment></React.Fragment>
+
+    • Forma 02
+    <></>
+
+-----------------------------------------------------
+
+    [08 - O que aprendemos?]
+
+    • Adicionar informações externas ao componente com Props
+    • Como funciona o props.children
+    • O atributo key é importante em arrays no React
+    • Usar spread operator de forma consciente para passar props para os componentes {...item}
+
+-----------------------------------------------------
+
+[05. State]
+
+    [01 - Projeto da aula anterior]
