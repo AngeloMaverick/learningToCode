@@ -306,3 +306,39 @@ Luiz Fernando Ribeiro
 [05. State]
 
     [01 - Projeto da aula anterior]
+
+-----------------------------------------------------
+
+    [02 - Introduzindo estados]
+
+    const [tarefas, setTarefas] = useState([{...
+    setTarefas([...tarefas, { tarefa: "Estudar estado", tempo: "05:00:00"}]);
+
+-----------------------------------------------------
+
+    [03 - useState]
+
+    A função useState retorna um array para que possamos desestruturar e pegar os valores de forma simples, apenas utilizando [estado, funcaoQueMudaOEstado].
+
+-----------------------------------------------------
+
+    [04 - Para saber mais: Sobre reatividade]
+
+    O React não é reativo!!!
+
+    Para início de conversa, Javascript não é uma linguagem reativa, logo, seus pacotes também não deveriam ser, a não ser que tenhamos uma grande mudança. Existe um pacote chamado RxJS que é uma referência em reatividade com Javascript, mas a equipe do React não demonstrou até agora nenhum interesse de deixar o pacote reativo.
+
+    https://www.youtube.com/watch?v=ZZoB5frlcnE
+    https://www.reactivemanifesto.org/pt-BR
+
+-----------------------------------------------------
+
+    [05 - Faça como eu fiz: Adicionando um estado na lista]
+
+-----------------------------------------------------
+
+    [06 - Controlando o formulário]
+
+    
+
+

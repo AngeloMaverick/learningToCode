@@ -10,7 +10,7 @@ export default function Cronometro() {
                 <Relogio />
             </div>    
             <Botao>
-                Começar
+                Começar!
             </Botao>
         </div>
     )
