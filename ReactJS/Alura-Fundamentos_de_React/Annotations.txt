@@ -517,5 +517,70 @@ Luiz Fernando Ribeiro
 
     [02 - Observando mudanças]
 
-    
+-----------------------------------------------------
 
+    [03 - Reagindo ao estado]
+
+    Com o useEffect "observar" a mudança do estado e, sempre que ele mudar, executar uma função fazendo alguma alteração.
+
+-----------------------------------------------------
+
+    [04 - Faça como eu fiz: Utilizando useEffect no cronômetro]   
+    
+    Optional Chaining, ou encadeamento opcional, te permite verificar um encadeamento para não haver problemas de tempo of null, no caso de selecionado ser null.
+
+    if(selecionado?.tempo)
+
+    esse if é a mesma coisa que escrever isso aqui:
+
+    if(selecionado && selecionado.tempo)
+
+-----------------------------------------------------
+
+    [05 - Para saber mais: Ciclo de vida de um componente]
+
+    Um componente, assim como o ser humano, tem um ciclo de vida! No caso do componente, ele nasce, compartilha informação e morre!
+
+    Em geral um componente tem um ciclo de vida assim:
+
+        componentWillMount (antes de ser montado)
+        componentDidMount (acabou de ser montado)
+        componentWillUpdate (componente acabou de atualizar)
+        componentWillUnmount (componente vai ser desmontado)
+    
+    Os nomes acima são métodos que podem ser utilizados em class components assim como o método render que utilizamos para renderizar o JSX.
+
+    https://pt-br.reactjs.org/docs/react-component.html
+
+    • componentWillMount = useLayoutEffect
+    É usado quando você precisa mudar algo visualmente antes do componente aparecer, para que não haja aquele problema da tela piscar assim que a tela carrega, um bom exemplo disso atualmente é a mudança de temas para light/dark.
+    
+    • componentDidMount = useEffect
+    O useEffect com o array de dependências vazio atua como ocomponentDidMount, diferente do useLayoutEffect, ele executa assim que o componente é renderizado, normalmente é utilizado para fazer chamadas para o servidor ou fazer algum cálculo com props passados.
+
+    • componentWillUpdate = useLayoutEffect ou useEffect com dependências
+    O componentWillUpdate pode ser feito tanto pelo useLayoutEffect quanto pelo useEffect, desde que tenha uma variável no array de dependências e, à partir da primeira execução, os 2 atuarão como componentWillUpdate, sempre executando quando essa variável mudar.
+
+    • componentWillUnmount = return do useEffect
+    Diferente do que muitas pessoas pensam, também existe a representação do componentWillUnmount em hooks, que é retornar uma função dentro do useEffect! dessa forma essa função dentro do return só será executada quando o componente estiver desmontando. É bastante usado para clearTimeout, clearInterval ou para enviar informações de acesso daquele componente para outro lugar.
+
+-----------------------------------------------------
+
+    [06 - Mostrando no relógio]
+    
+    const [minutoDezena, minutoUnidade] = String(minutos);
+    const [segundoDezena, segundoUnidade] = String(segundos);
+    
+    tsconfig.json
+    • "compilerOptions": { "downlevelIteration": true, }
+
+-----------------------------------------------------
+
+    [07 - Regressiva]
+
+-----------------------------------------------------
+
+    [08 - Finalizando a tarefa]    
+
+    • Renderização condicional
+    {completado && "componente"}
