@@ -1,0 +1,93 @@
+-- Alura
+-- React Native: Utilizando e criando Hooks
+Natalia Kelim Thiel
+
+[01. Projeto]
+
+	[01 - Apresentação]
+
+	• Como fazer aplicações dinâmicas?
+	• Como construir aplicações sem Expo?
+	• Saber criar componentes
+
+	Home do orgs
+	• Lista de produtores
+	• Expandir produtor
+	• Mudar classificação com estado
+	• Usando hooks
+		○ Estado, efeito e até customizado
+
+-----------------------------------------------------
+	
+	[02 - Preparando o ambiente]
+
+-----------------------------------------------------
+	
+	[03 - React Native CLI]
+
+	https://reactnative.dev/docs/environment-setup
+
+	$ java -version
+	$ node --version
+	$ npm -v
+
+	IOS
+	$ pod --version
+	Instalar o XCode
+
+	CLI = Command Line Interface
+
+-----------------------------------------------------
+	
+	[04 - Criar o projeto e emulador]
+
+	$ npx react-native init orgsHooks --version 0.65.1
+
+-----------------------------------------------------
+	
+	[05 - Rodando o projeto]
+
+	$ npx react-native start
+	$ npx react-native run-ios (MacOS)
+	$ npx react-native run-android
+
+-----------------------------------------------------
+	
+	[06 - Pré-requisitos]
+
+	Precisamos instalar o Node, o JDK, o Android Studio, as SDKs, o Xcode (para iOS). Também, é necessário criar o projeto e o emulador.
+
+	Para que possamos rodar o projeto em nossa máquina, precisamos seguir os passos da documentação, instalar e criar cada um dos componentes acima. Vale lembrar que MacOS e Windows têm algumas diferenças.
+
+-----------------------------------------------------
+	
+	[07 - Para saber mais: Expo vs RN]
+
+	https://www.alura.com.br/artigos/como-fazer-a-migracao-do-expo-para-react-native-cli
+
+-----------------------------------------------------
+	
+	[08 - Faça como eu fiz]
+
+-----------------------------------------------------
+	
+	[09 - O que aprendemos?]
+
+	• O que é React Native CLI
+	• Como configurar o ambiente
+	• Como criar um Emulador ideal
+	• Como rodar um Projeto
+
+-----------------------------------------------------
+
+[02. Estados e ciclo de vida]
+
+	[01 - Projeto da aula anterior]
+
+	https://github.com/alura-cursos/react-native-utilizando-e-criando-hooks/tree/Aula1
+
+	Lembre-se: caso baixe um projeto do zero, rode os comandos npm install para baixar as dependências do node e, caso for rodar para iOS, cd ios && pod install para baixar as dependências nativas de iOS.
+
+
+
+	

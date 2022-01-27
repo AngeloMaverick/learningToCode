@@ -584,3 +584,27 @@ Luiz Fernando Ribeiro
 
     • Renderização condicional
     {completado && "componente"}
+
+-----------------------------------------------------
+
+    [09 - Refatorando Class Components]
+
+-----------------------------------------------------
+
+    [10 - Projeto final do curso]
+
+    https://github.com/alura-cursos/alura-studies/tree/main
+
+-----------------------------------------------------
+
+    [11 - O que aprendemos?]
+
+    • Funciona o ciclo de vida de um componente
+    • Utilizar o useEffect
+    • Desestruturar strings
+    • Utilizar função recursiva
+    • Refatorar um class component para um function component
+
+-----------------------------------------------------
+
+    [12 - Conclusão]
