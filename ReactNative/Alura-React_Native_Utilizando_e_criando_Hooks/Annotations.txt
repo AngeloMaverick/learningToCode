@@ -88,6 +88,21 @@ Natalia Kelim Thiel
 
 	Lembre-se: caso baixe um projeto do zero, rode os comandos npm install para baixar as dependências do node e, caso for rodar para iOS, cd ios && pod install para baixar as dependências nativas de iOS.
 
+-----------------------------------------------------
+	
+	[02 - Preparando o ambiente: Imagens do projeto]
+
+	https://github.com/alura-cursos/react-native-utilizando-e-criando-hooks/blob/main/Home.png
+
+-----------------------------------------------------
+	
+	[03 - Componente do topo]
+
+	• Criar a pasta src
+
+
+
+
 
 
 	
