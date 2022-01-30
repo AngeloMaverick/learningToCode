@@ -100,9 +100,66 @@ Natalia Kelim Thiel
 
 	• Criar a pasta src
 
-
-
-
-
-
+-----------------------------------------------------
 	
+	[04 - Preparando o ambiente: Arquivo de Mock]
+
+-----------------------------------------------------
+	
+	[05 - Criando Mocks e serviços]
+
+-----------------------------------------------------
+	
+	[06 - Estilos]
+
+	Uma vez que temos um componente criado, podemos chamar o parâmetro style e, dentro dele, chamar a constante ‘estilos’, que possui vários modos diferentes, como, por exemplo, o ‘imagem’ e o ‘boasVindas’.
+
+-----------------------------------------------------
+	
+	[07 - Consumindo o serviço]
+
+-----------------------------------------------------
+	
+	[08 - Salvando no Estado]
+
+-----------------------------------------------------
+	
+	[09 - Estados]
+
+	Devemos criar uma função que define do estado setState() e usar a função componentDidMount() e, por fim, aplicar na View através de uma função render().
+
+-----------------------------------------------------
+	
+	[10 - Para saber mais: Métodos de ciclo de vida]
+
+	• componentDidMount: é executado quando o componente termina de renderizar
+	
+	• componentDidUpdate: que é executado quando o componente recebe alguma atualização e não é executado na primeira vez que o componente carrega
+	
+	• componentWillUnmount: que é executado quando o componente é removido da tela
+	
+	• componentDidCatch: que é chamado quando a aplicação encontra algum erro durante a renderização, em algum método do ciclo de vida ou no construtor de componentes filhos
+
+	React.Componente: https://pt-br.reactjs.org/docs/react-component.html
+
+-----------------------------------------------------
+	
+	[11 - Faça como eu fiz]
+
+-----------------------------------------------------
+	
+	[12 - O que aprendemos?]
+
+	• Produzir um Componente
+	• Criar um Mock
+	• Salvar um Estado
+
+-----------------------------------------------------
+
+[03. Hooks]
+
+	[01 - Projeto da aula anterior]
+
+	https://github.com/alura-cursos/react-native-utilizando-e-criando-hooks/tree/Aula2
+
+	Lembre-se: caso baixe um projeto do zero, rode os comandos npm install para baixar as dependências do node e, caso for rodar para iOS, cd ios && pod install para baixar as dependências nativas de iOS.
