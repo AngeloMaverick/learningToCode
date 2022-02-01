@@ -173,3 +173,23 @@ Natalia Kelim Thiel
 -----------------------------------------------------
 	
 	[3 - Armazenando produtores]
+
+-----------------------------------------------------
+	
+	[4 - useEffect vs ComponentDidMount]
+
+	É muito mais vantajosa, para o desenvolvedor e para o compilador, a utilização de Hooks para chamar funções do que criar classes inteiras apenas para chamar uma simples função. Isso facilita a reutilização da lógica com estado entre vários componentes.
+
+-----------------------------------------------------
+	
+	[5 - Estilizar a lista #1]
+
+	acessbilityLabel -> Como o robo irá ler a imagem para o deficiente visual.
+
+-----------------------------------------------------
+	
+	[6 - Estilizar a lista #2]
+
+	CSS
+		elevation -> Atributo apenas para Android para fazer sombra
+		• Para se fazer no iOS tem um exemplo no código do componente Produtor.js
