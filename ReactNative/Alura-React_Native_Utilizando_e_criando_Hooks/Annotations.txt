@@ -193,3 +193,7 @@ Natalia Kelim Thiel
 	CSS
 		elevation -> Atributo apenas para Android para fazer sombra
 		• Para se fazer no iOS tem um exemplo no código do componente Produtor.js
+
+-----------------------------------------------------
+	
+	[7 - Componente de estrelas #1]
