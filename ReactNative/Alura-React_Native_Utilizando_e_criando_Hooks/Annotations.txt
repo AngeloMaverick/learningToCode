@@ -197,3 +197,52 @@ Natalia Kelim Thiel
 -----------------------------------------------------
 	
 	[7 - Componente de estrelas #1]
+
+-----------------------------------------------------
+	
+	[8 - Componente de estrelas #2]
+
+-----------------------------------------------------
+	
+	[9 - Refatorando as estrelas]
+
+-----------------------------------------------------
+	
+	[10 - Para saber mais: Alternativas para o iOS]
+
+	Nesta aula, prestamos atenção aos estilos tanto para Android quanto para iOS. No entanto, é muito comum que não tenhamos o hardware específico da Apple para que possamos testar no iOS.
+
+	Pensando nisso, será que existem alternativas mais baratas para que possamos validar nossa aplicação para iOS também?
+
+	Sim! Não são opções gratuitas, porém, hoje em dia é possível alugar máquinas e acessá-las via internet, como os serviços:
+
+	MacinCloud;
+	Virtual MacOSX.
+	Também é possível, porém não recomendado e com alta incidência de incompatibilidades de hardware, criar máquinas virtuais dentro de outros sistemas operacionais, instalando o MacOS.
+
+	Caso você queira usar alguma dessas alternativas, ainda sim precisa seguir os passos do artigo de configuração para preparar o ambiente de iOS na sessão "Aplicações com React Native iOS".
+
+-----------------------------------------------------
+	
+	[11 - Faça como eu fiz]
+
+-----------------------------------------------------
+	
+	[12 - O que aprendemos?]
+
+	• Modificar a lista de produtores do app Orgs
+	• User o State do Hook
+	• Criar uma lista de produtores
+	• Estilizar a lista de produtores
+	• Adicionar as estrelas para classificar produtores no App
+	• Refatorar as estrelas
+
+-----------------------------------------------------
+
+[04. Avançando com Hooks]
+
+	[01 - Projeto da aula anterior]
+
+	https://github.com/alura-cursos/react-native-utilizando-e-criando-hooks/tree/Aula3
+
+	Lembre-se: se você baixar um projeto do zero, rode os comandos npm install para baixar as dependências do node. Se for rodar para iOS, digite cd ios && pod install para baixar as dependências nativas de iOS, beleza? Depois de fazer isso, você pode prosseguir no curso!

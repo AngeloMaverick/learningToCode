@@ -24,7 +24,7 @@ const produtores = {
             estrelas: gerarNumeroAleatorio(1, 5),
         },
         {
-            nome: "jenny Jack Farm",
+            nome: "Jenny Jack Farm",
             imagem: jennyJack,
             distancia: `${gerarNumeroAleatorio(1, 500)}m`,
             estrelas: gerarNumeroAleatorio(1, 5),
