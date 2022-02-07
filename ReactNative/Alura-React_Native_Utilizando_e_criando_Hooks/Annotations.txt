@@ -251,4 +251,14 @@ Natalia Kelim Thiel
 	
 	[02 - Criando um Hook]
 
+-----------------------------------------------------
 	
+	[03 - Hook de redução]
+
+	https://reactjs.org/docs/hooks-reference.html
+
+-----------------------------------------------------
+	
+	[04 - Hooks existentes]
+
+	Usando o useReducer, podemos simplificar a alteração do estado do componente quando clicamos nele, e tem mais: podemos reutilizar o código com muito mais facilidade agora!
