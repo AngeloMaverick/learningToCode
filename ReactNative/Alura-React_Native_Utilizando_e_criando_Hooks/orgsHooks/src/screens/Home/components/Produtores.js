@@ -16,6 +16,7 @@ export default function Produtores({ topo: Topo }) {
     //     setLista(retorno.lista);
     // }, []);
 
+    console.log('lista: ', lista);
     const TopoLista = () => {
         return <>
             <Topo />
