@@ -16,7 +16,31 @@ export default function Produtores({ topo: Topo }) {
     //     setLista(retorno.lista);
     // }, []);
 
-    console.log('lista: ', lista);
+    /*
+    const listaOrdenadaPorDistancia = () => {
+        lista.sort(function (x, y) {
+            return x.distancia - y.distancia;
+        });
+    }
+    const listaOrdenadaPorEstrelas = () => {
+        lista.sort(function (x, y) {
+            return x.estrelas - y.estrelas;
+        });
+    }
+    const listaOrdenadaPorNome = () => {
+        lista.sort(function (x, y) {
+            let a = x.nome.toUpperCase(),
+                b = y.nome.toUpperCase();
+            return a == b ? 0 : a > b ? 1 : -1;
+        })
+    }
+    */
+
+    //listaOrdenadaPorDistancia();
+    //listaOrdenadaPorEstrelas();
+    //listaOrdenadaPorNome();
+    //console.log('lista: ', lista);
+
     const TopoLista = () => {
         return <>
             <Topo />

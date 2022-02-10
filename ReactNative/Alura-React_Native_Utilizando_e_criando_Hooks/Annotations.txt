@@ -291,6 +291,37 @@ Natalia Kelim Thiel
 	
 	[07 - Desafio: Ordenar produtores!]
 
-	Ordene os produtores por quantidade de estrela, nome ou distância.
-	Utilize o método do Javascript que ordena listas.
-	Não vale ordenar por nome direto no mock!
+	Ordene os produtores por: 
+		1. Distância
+		2. Quantidade de Estrelas
+		3. Nome
+
+	• Utilize o método do Javascript que ordena listas.
+	• Não vale ordenar por nome direto no mock!
+
+	https://ricardo-reis.medium.com/o-método-sort-do-array-javascript-482576734e0a
+	• Ordenando um array de objetos por uma propriedade específica
+
+	Solução:
+		Para concluir o desafio, você só precisa ordenar a lista por um dos parâmetros. Assim, o exemplo abaixo ordena a lista por distância dentro do hook de useProdutores.
+
+			retorno.lista.sort(
+           		(produtor1, produtor2) => produtor1.distancia - produtor2.distancia
+       		);
+
+-----------------------------------------------------
+	
+	[08 - Faça como eu fiz]
+
+-----------------------------------------------------
+	
+	[09 - O que aprendemos?]
+
+	• Criar seu próprio Hook
+	• Utilizar o Hook Reducer
+	• Utilizar o Hook de Memória
+
+-----------------------------------------------------
+	
+	[10 - Conclusão]
+	

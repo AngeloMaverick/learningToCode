@@ -1,0 +1,40 @@
+-- Alura
+-- Git e Github: Controle e compartilhe seu código
+Vinicius Dias
+
+[01. O que é Git?]
+
+	[01 - Introdução]
+
+-----------------------------------------------------
+	
+	[2 - Para que serve Git?]
+
+	Sistemas de Controle de Versão
+
+	• CVS
+	• SVN
+	• Mercurial
+	• GIT
+
+-----------------------------------------------------
+	
+	[3 - Utilidade de um VCS]
+
+	• VCS (Version Control System)
+
+	O Git permite que a gente armazene as modificações feitas em cada arquivo em um servidor próprio para isso. Toda a gestão de alterações é feita pelo Git e nós só precisamos nos preocupar em criar código que funciona, e não em quem alterou o que antes.
+
+	Cada alteração que você faz fica gravada em um histórico, podendo ser visualizada e restaurada a qualquer instante.
+
+-----------------------------------------------------
+	
+	[4 - Instalando o Git]
+
+	https://git-scm.com
+
+	dir -> Mostrar o que tem no diretório
+	ls  -> Mostrar o que tem no diretório
+	
+	git --version -> Mostra a versão do Git
+	
