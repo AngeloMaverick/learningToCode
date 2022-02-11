@@ -8,7 +8,7 @@ Vinicius Dias
 
 -----------------------------------------------------
 	
-	[2 - Para que serve Git?]
+	[02 - Para que serve Git?]
 
 	Sistemas de Controle de Versão
 
@@ -19,7 +19,7 @@ Vinicius Dias
 
 -----------------------------------------------------
 	
-	[3 - Utilidade de um VCS]
+	[03 - Utilidade de um VCS]
 
 	• VCS (Version Control System)
 
@@ -29,12 +29,153 @@ Vinicius Dias
 
 -----------------------------------------------------
 	
-	[4 - Instalando o Git]
+	[04 - Instalando o Git]
 
 	https://git-scm.com
 
-	dir -> Mostrar o que tem no diretório
-	ls  -> Mostrar o que tem no diretório
+	$ dir -> Mostrar o que tem no diretório
+	$ ls  -> Mostrar o que tem no diretório
 	
-	git --version -> Mostra a versão do Git
+	$ git --version -> Mostra a versão do Git
+
+-----------------------------------------------------
+	
+	[05 - Para saber mais: Instalação]
+
+	No Linux: https://git-scm.com/download/linux
+	No macOS: https://git-scm.com/download/mac
+
+-----------------------------------------------------
+	
+	[06 - Repositórios]
+
+	$ git init   -> Iniciar um repositório no diretório atual
+	$ git status -> Branch, Commits, Untracked files...
+
+-----------------------------------------------------
+	
+	[07 - Para saber mais: Quem é você]
+
+	Alterando o nome e email somente no repositório que está trabalhando:
+	$ git config --local user.name "Seu nome"
+	$ git config --local user.email "seu@email.com"
+
+-----------------------------------------------------
+	
+	[08 - Primeiros passos]
+
+	O git init inicializa um repositório no diretório em que o comando for executado. A partir deste comando, o Git poderá gerenciar as modificações realizadas nos arquivos.
+
+-----------------------------------------------------
+	
+	[09 - Consolidando o seu conhecimento]
+
+-----------------------------------------------------
+	
+	[10 - O que aprendemos?]
+
+	• O que são (e para que servem) sistemas de controle de versões e como eles podem ajudar o nosso fluxo de desenvolvimento
+	• O que é o Git e como instalá-lo
+	• Que com o comando git init nós conseguimos criar um repositório Git;
+	• Como analisar o estado do nosso repositório através do comando git status.
+
+-----------------------------------------------------
+
+[02. Iniciando os trabalhos]
+
+	[01 - Salvando alterações]
+
+	$ git add "nome do arquivo"         -> Adiciona o arquivo
+	$ git add .                         -> Adiciona todos os arquivos do diretório atual
+	$ git rm --cached "nome do arquivo" -> Para reverter a ação
+
+	$ git commit -m "mensagem" -> Commit
+	• Elaborar mensagens descritivas e não muito grandes!
+		Exemplo: "Criando arquivo index.html com lista de cursos"
+
+-----------------------------------------------------
+	
+	[02 - Para saber mais: git status]
+
+	• HEAD: Estado atual do nosso código, ou seja, onde o Git os colocou
+	• Working tree: Local onde os arquivos realmente estão sendo armazenados e editados
+	• index: Local onde o Git armazena o que será commitado, ou seja, o local entre a working tree e o repositório Git em si.
+
+	https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Alterações-em-Seu-Repositório
+
+-----------------------------------------------------
+	
+	[03 - Vendo o histórico]
+
+	$ git log
+		hash do commit / ramo do commit
+		Author
+		Data
+		Comentário do Commit
+	
+	$ git config --local  -> Configurações para esse repositório
+	$ git config --global -> Configurações para todo o computador
+
+	$ git config --local user.name "nome"
+	$ git config --local user.mail "email"
+
+	$ git log --oneline -> Git log resumido
+	$ git log -p        -> Git log + alterações realizadas
+
+	• Personalização de Gitlog
+	https://devhints.io/git-log
+
+-----------------------------------------------------
+	
+	[04 - Primeira configuração do Git]
+
+	$ git config --local user.name "Nome da pessoa"
+
+	Assim todos os commits executados neste repositório serão atribuídos à pessoa com nome Nome da pessoa. Para mais detalhes e outras configurações possíveis (até algumas mais avançadas), você pode conferir este link: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration.
+
+-----------------------------------------------------
+	
+	[05 - Para saber mais: git log]
+
+	$ git log --help
+
+-----------------------------------------------------
+	
+	[06 - Ignorando arquivos]
+
+	arquivo .gitignore
+		Dentro do arquivo:
+			ide-config
+	
+	• Nunca commite código que não funciona!!!
+	• A cada alteração significativa deve gerar um commit
+		• A cada bug for corrigido
+		• A cada feature implementada
+
+-----------------------------------------------------
+	
+	[07 - Para saber mais: Quando commitar]
+
+-----------------------------------------------------
+	
+	[08 - Consolidando o seu conhecimento]
+
+-----------------------------------------------------
+	
+	[09 - O que aprendemos?]
+
+	• Que um commit é a forma de salvar um estado ou versão do nosso código
+	• Como adicionar arquivos para serem commitados com git add
+	• Como commitar arquivos, utilizando o comando git commit
+	• Como verificar o histórico de commits, através do git log e algumas de suas opções:
+		git log --oneline
+		git log -p
+		git log --pretty="parametros de formatação"
+	• Como fazer o Git não monitorar arquivos, através do .gitignore
+	• Que não devemos realizar commit, ou seja, salvar um estado, da nossa aplicação que não esteja funcionando
+
+-----------------------------------------------------
+
+[03. Compartilhando o trabalho]
+
 	
