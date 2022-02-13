@@ -177,5 +177,61 @@ Vinicius Dias
 -----------------------------------------------------
 
 [03. Compartilhando o trabalho]
+	
+	[01 - Repositórios remotos]
+
+	$ mkdir "nome do diretorio"
+	$ cd "nome do diretorio"
+	$ git init --bare -> Só serve para armazenar informações, indica que esse repositório é puro, é um repositório que só contém as alterações dos arquivos, não contem uma cópia de cada um dos arquivos físicos.
+	
+	$ git status
+	$ git remote                       -> Lista todos os repositórios remotos que o repositório local conhece
+	$ git remote add local "diretorio" -> Criando uma referência de repositório remoto dentro do próprio computador
+	$ git remote -v                    -> nome e endereços de repositórios remotos
+
+	fetch -> De onde vem
+	push  -> Para onde vai
+
+	$ git clone "diretorio" "nome do projeto que você desejar" -> clona o repositório desse endereço, com o nome que você desejar
+
+-----------------------------------------------------
+	
+	[02 - Servidor Git]
+
+	$ git init --bare
+
+	Com este comando nós criamos um repositório que não terá a working tree, ou seja, não conterá uma cópia dos nossos arquivos. Como o repositório servirá apenas como servidor, para que outros membros da equipe sincronizem seus trabalhos, poupamos espaço de armazenamento desta forma.
+
+-----------------------------------------------------
+	
+	[03 - Trabalhando com repositórios remotos]
+
+	$ git remote add nome-repositorio caminho/para/o/repositorio
+
+	Desta forma teremos um link do nosso repositório local com o repositório remoto, que chamamos de nome-repositorio, que está armazenado em caminho/para/o/repositorio.
+
+-----------------------------------------------------
+	
+	[04 - Sincronizando os dados]
+
+	$ git push local master -> Empurrar a branch master para o repositório remoto "local"
+	$ git pull              -> Puxa os dados do repositório remoto
+
+	$ git remote rename origin local -> Renomeia o repositório remoto de "origin" para "local"
+	$ git remote                     -> Lista todos os repositórios remotos atrelados a esse repositório local
+	$ git pull local master          -> Puxa a o repositório remoto "local" para a branch master local
+	$ git log -p                     -> Exibe as modificações detalhadas linha a linha de alteração
+
+-----------------------------------------------------
+	
+	[05 - Compartilhamos as alterações]
+
+	$ git push [repositorio] master
+
+	Desta forma, nós enviamos as alterações em nosso branch master para o repositório remoto. Basta substituir [repositorio] pelo nome que demos ao repositório ao adicioná-lo. Já para trazer os dados que estiverem no repositório remoto, podemos utilizar o git pull [repositorio] master.
+
+-----------------------------------------------------
+	
+	[06 - Github]
 
 	
