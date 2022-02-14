@@ -234,4 +234,46 @@ Vinicius Dias
 	
 	[06 - Github]
 
+	$ git remote add origin "link do repositório remoto"
+	$ git push -u origin master -> -u quer dizer "sempre que você der git push e tiver na branch master você deve enviar para a origin!"
+	$ git push origin master    -> Empurrando dados da branch master para o repositório remoto origin
+
+-----------------------------------------------------
 	
+	[07 - Para saber mais: Github]
+
+-----------------------------------------------------
+	
+	[08 - Consolidando o seu conhecimento]
+
+	$ git init --bare
+
+	OBS: Não se esqueça do parâmetro --bare. Caso tenha executado o comando init sem esse parâmetro, execute na sequência o seguinte comando: git config core.bare true.
+
+	• 'git remote rename origin local' serve para renomear o repositório remoto de "origin" para "local".
+
+-----------------------------------------------------
+	
+	[09 - O que aprendemos?]
+
+	• O que são repositórios remotos;
+	• Como criar um repositório Git sem uma cópia dos arquivos (com --bare) para ser utilizado como servidor;
+	• Como adicionar links para os repositórios remotos, com o comando git remote add;
+	• Como baixar um repositório pela primeira vez, clonando-o com o comando git clone;
+	• Como enviar as nossas alterações para um repositório remoto, com git push;
+	• Como atualizar o nosso repositório com os dados no repositório remoto, utilizando git pull;
+	• O que é e para que serve o GitHub;
+	• Como criar um repositório no GitHub;
+	• Como adicionar um repositório do GitHub como repositório remoto.
+
+-----------------------------------------------------
+
+[04. Trabalhando em equipe]
+	
+	[01 - Branches]
+
+	$ git branch                 -> Lista branches
+	$ git branch "nome_branch"   -> Cria uma nova branch
+	$ git checkout "nome_branch" -> Muda sua branch de atuação
+
+	https://git-school.github.io/visualizing-git/
