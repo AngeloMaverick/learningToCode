@@ -277,3 +277,57 @@ Vinicius Dias
 	$ git checkout "nome_branch" -> Muda sua branch de atuação
 
 	https://git-school.github.io/visualizing-git/
+
+	$ git checkout -b "nome_branch" -> Cria e entra na branch
+
+-----------------------------------------------------
+	
+	[02 - Para saber mais: Ramificações]
+
+-----------------------------------------------------
+	
+	[03 - Unindo o trabalho]
+
+	$ git merge "nome da branch" -> Fazer fusão de duas branches (A que está em utilização e a que você aponta)
+	
+	:x, ENTER -> No VIM
+
+-----------------------------------------------------
+	
+	[04 - Merge de branches]
+
+	$ git checkout master 
+	$ git merge titulo
+
+	Desta forma colocaremos o HEAD na branch master, ou seja, faremos com que o nosso código esteja no estado que o deixamos com o último commit na master. Depois, uniremos o trabalho da branch titulo com a branch atual (master).
+
+-----------------------------------------------------
+	
+	[05 - Atualizando a branch]
+
+	$ git rebase "nome da branch" -> Fazer com que o ultimo commit da branch atual fique na frente do ultimo commmit da branch a ser apontada.
+	
+	$ git log --graph -> Log em gráfico
+
+-----------------------------------------------------
+	
+	[06 - Rebase vs Merge]
+
+	O merge junta os trabalhos e gera um merge commit. O rebase aplica os commits de outra branch na branch atual.
+
+	Com isso, evitamos os commits de merge. Há uma longa discussão sobre o que é "melhor": rebase ou merge. Estude, pesquise, e tire suas próprias conclusões. Aqui tem um artigo (de milhares outros) que cita o assunto: https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c.
+
+-----------------------------------------------------
+	
+	[07 - Resolvendo conflitos]
+
+	$ git merge "nome da branch"
+	$ git status
+
+	Corrigir conflito
+	both modified: index.html
+
+	git add index.html
+	git commit
+
+	$ git push local master
