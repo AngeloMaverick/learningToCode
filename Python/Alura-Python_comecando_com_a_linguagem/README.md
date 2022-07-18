@@ -201,3 +201,188 @@
         preco = 49.99
         type(preco)
         <class 'float'>
+
+-----------------------------------------------------
+
+    [11 - Tipagem de variáveis]
+
+    Uma variável só passa a existir quando atribuímos um valor.
+    É preciso atribuir um valor para inicializar uma variável, definindo
+    assim o seu tipo.
+
+    Não há declaração de variáveis estáticas em Python, como em linguagens 
+    como C, Java ou C#. Nessas linguagens, indicamos o tipo e o nome das 
+    variáveis e ela já passa a existir.
+        int idade;
+    
+    Repare que só declaramos o tipo e o nome da variável, sem ter 
+    atribuído o valor.
+
+    Em Python, a variável só passa a existir quando atribuímos um valor, 
+    como no exemplo abaixo:
+        idade = 12
+    
+    Isso faz todo sentido, já que não temos uma declaração explícita do 
+    tipo, como na linguagem Java ou C#. O interpretador do Python não 
+    tem como assumir um tipo.
+
+-----------------------------------------------------
+
+    [12 - Para saber mais: Snake_Case]
+
+    O Python utiliza por convenção o padrão Snake_Case para nomes de 
+    variáveis (ou identificadores).
+
+    Um exemplo de variáveis em Snake_Case são:
+        idade_esposa = 20
+        perfil_vip = 'Flávio Almeida'
+        recibos_em_atraso = 30
+    
+    Em outras linguagens também se usa o padrão CamelCase. O mesmo 
+    exemplo com CamelCase (que não é o padrão do Python):
+        idadeEsposa = 20
+        perfilVip = 'Flávio Almeida'
+        recibosEmAtraso = 30
+    
+    Vamos seguir o padrão do Python nesse curso, que é o Snake_Case!
+
+-----------------------------------------------------
+
+# [02. Lidando com a entrada do usuário]
+****
+    [01 - Instalando e conhecendo o PyCharm]
+
+    • Sublime Text
+    • Atom
+
+    Python IDE -> PyCharm
+    https://www.jetbrains.com/pt-br/pycharm/
+
+    Baixar o PyCharm Community.
+
+    Testar a IDE.    
+
+-----------------------------------------------------
+
+    [02 - Mão na massa: Primeiro projeto com PyCharm]
+
+-----------------------------------------------------
+
+    [03 - Comparando variáveis]
+
+    Corrigindo Spellchecking do PyCharm
+    https://www.jetbrains.com/help/pycharm/spellchecking.html
+
+-----------------------------------------------------
+
+    [04 - Impossível acertar o número]
+
+    numero_secreto = 42
+    chute = input("Digite seu número")
+    print("Você digitou ", chute)
+    if(numero_secreto == chute):
+        print("Você acertou")
+    else:
+        print("Você errou")
+
+    Com base no código de Romário, temos as seguintes afirmações:
+
+    a) Sempre exibirá a mensagem Você errou, independentemente se o 
+    chute for igual ao número secreto
+    b) Todo valor retornado pela função input é um número.
+    c) É necessário converter o retorno de input para um número, 
+    no caso, um inteiro.
+
+    • Apenas B é falsa.
+
+    Não importa o número digitado, a comparação com == envolvendo 
+    tipos diferentes resultará em falso. Isso porque a função input 
+    sempre retorna um texto (string). Sendo assim, é necessário converter 
+    o valor retornado em inteiro, para que a comparação com outro inteiro, 
+    no caso o numero_secreto, seja possível. Realizamos essa conversão 
+    através da função int.
+
+-----------------------------------------------------
+
+    [05 - Onde foi que ela errou?]
+
+    minha_idade = 26
+    idade_namorado = 25
+    if(minha_idade == idade_namorado)
+        print('temos idades iguais')
+    else:
+        print('temos idades diferentes')
+
+    Minha Resposta: Esqueceu do ":" após a linha do IF
+
+    Resposta Oficial: O problema é que para indicar o início do bloco if, 
+    é necessário utilizar dois pontos (:). Veja que no código dele faltou 
+    os dois pontos.
+    Importante também é sempre usar a indentação correta. Ou seja, depois 
+    da linha com o if, devemos usar 4 espaços ou pressionar a tecla tab 
+    para começar o novo bloco de código.
+
+-----------------------------------------------------
+
+    [06 - Comparação estranha]
+
+    numero1 = 10
+    numero2 = 10
+    if(numero1 = numero2):
+        print("São números iguais")
+
+    Minha Resposta: Na linha do IF deveria ser "=="
+
+    Resposta Oficial: O problema é que foi usado um = para realizar a 
+    comparação. Quando usamos apenas um =, estamos atribuindo um valor 
+    à variável. Para compararmos valores ou variáveis, usamos o ==.
+
+-----------------------------------------------------
+
+    [07 - O resultado da soma é]
+
+    idade1 = 10
+    idade2 = "20"
+    print(idade1 + idade2)
+
+    Minha Resposta: O código não funciona!
+
+    Resposta Oficial: O código na verdade não funciona, e exibe a 
+    seguinte mensagem de erro no console:
+    unsupported operand type(s) for +: 'int' and 'str'
+    Isso acontece porque não podemos realizar uma operação de soma 
+    envolvendo uma string. Para resolvermos o problema, podemos 
+    apelar para a função int(), que converte uma string que contém 
+    um número, em um número inteiro:
+
+-----------------------------------------------------
+
+    [08 - E o resultado agora?]
+
+    nome = "Nico"
+    sobrenome = "Steppat"
+    print(nome + sobrenome)
+
+    Minha Resposta: NicoSteppat
+
+    Resposta Oficial: A resposta correta é NicoSteppat.
+    O caractere + aqui não tem o significado de somar e sim de 
+    concatenar. Estamos concatenando (juntando) duas strings!
+    Repare também que não há espaço entre as palavras. Para que 
+    haja, basta fazer assim:
+    nome = "Nico"
+    sobrenome = "Steppat"
+    print(nome, sobrenome)
+
+    Lembrando que a função print automaticamente aplica um 
+    separador entre os valores. O separador é um espaço por 
+    padrão, mas pode ser reconfigurado pelo parâmetro sep:
+    nome = "Nico"
+    sobrenome = "Steppat"
+    print(nome, sobrenome, sep="_")
+
+-----------------------------------------------------
+
+    [09 - Diferenças entre o Python 2 e o Python 3]
+
+    
