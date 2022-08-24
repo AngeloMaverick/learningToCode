@@ -385,4 +385,114 @@
 
     [09 - Diferenças entre o Python 2 e o Python 3]
 
+    $python3
+    >>> print("python3")
+    python3
+    >>> print "python3"
+        File "<stdin>", line 1
+        print "python 3"
+                       ^
+        SyntaxError: Missing parentheses in call to 'print'
+    >>> print("ola", "mundo")
+    ola mundo
+    >>> chute_str = input("Digite ")
+    Digite 32
+    >>> type(chute_str)
+    <class 'str'>
+    >>> raw_input("Digite")
+        Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        NameError: name 'raw_input' is not defined
+    >>>
+
+
+    $python -V
+        Python 2.7.10
+    >>> print "python2"
+    python2
+    >>> print("python2")
+    python2
+    >>> print("ola", "mundo") // PRINT SE COMPORTA DE FORMA DIFERENTE
+    ('ola', 'mundo')
+    >>> print("ola", "mundo", sep="x") //NÃO TEM SEP
+        File "<stdin>", line 1
+        print("ola", "mundo", sep="x")
+                                 ^
+        SyntaxError: invalid syntax
+    >>> print("ola", "mundo", end="x") // NÃO TEM END
+        File "<stdin>", line 1
+        print("ola", "mundo", end="x")
+                                 ^
+        SyntaxError: invalid syntax
+    >>> chute_str = input("Digite ") // ANTIGAMENTE SE CONVERTIA AUTOMATICAMENTE
+    Digite 32
+    >>> type(chute_str)
+    <type 'int'>
+    >>> chute_str = raw_input("Digite ") // RAW_INPUT = INPUT DO PYTHON3
+    Digite 32
+    >>> type(chute_str)
+    <type 'str'>
+    >>>
+
+-----------------------------------------------------
+
+    [10 - Python 2 vs Python 3 - #1]
+
+    As funções input(...), print(...) e int(...) existem no Python 3.
+    A função raw_input(..) existe apenas no Python 2.
+
+-----------------------------------------------------
+
+    [11 - Python 2 vs Python 3 - #2]
+
+    No Python 2, a função print não aceita o parâmetro nomeado sep.
+
+-----------------------------------------------------
+
+    [12 - Para saber mais: JavaScript vs Python]
+
+-----------------------------------------------------
+
+    [13 - Arquivos do projeto atual]
+
+    https://github.com/alura-cursos/Curso-Python-3-parte-1-Introdu-o-nova-vers-o-da-linguagem/archive/capitulo2.zip
+
+-----------------------------------------------------
+
+# [03. Testando valores]
+****
+    [01 - A condição elif]
+
+    elif = ELSE IF
+
+-----------------------------------------------------
+    
+    [02 - Faixa Etária]
+
+-----------------------------------------------------
+
+    [03 - Faixa Etária - Variáveis]
+
+-----------------------------------------------------
+
+    [04 - If..else. e nada funciona!]
+
+-----------------------------------------------------
+
+    [05 - Mão na massa: Dando dicas]
+
+-----------------------------------------------------
+
+    [06 - Qual é o tipo?]
+
+    Uma variável do tipo bool pode ter apenas dois valores, True ou False, que 
+    podemos usar diretamente:
+
+    passou = True
+    errou = False
+
+-----------------------------------------------------
+
+    
+
     

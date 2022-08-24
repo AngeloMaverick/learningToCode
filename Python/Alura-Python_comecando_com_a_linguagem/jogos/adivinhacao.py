@@ -8,12 +8,19 @@ chute_str = input("Digite o seu numero: ")
 
 chute = int(chute_str)
 
+acertou = chute == numero_secreto
+maior = chute > numero_secreto
+menor = chute < numero_secreto
+
 print("Você digitou ", chute)
 
-if numero_secreto == chute:
+if acertou:
     print("Você acertou")
 else:
-    print("Você errou")
+    if maior:
+        print("Você errou! O seu chute foi maior do que o número secreto.")
+    elif menor:
+        print("Você errou! O seu chute foi menor do que o número secreto.")
 
 print("Fim do jogo")
 
@@ -26,3 +33,5 @@ print("Fim do jogo")
 # <class 'str'>
 # POIS A FUNÇÃO INPUT SEMPRE DEVOLVE UMA STRING!!!!
 # DEVE CONVERTER O CONTEÚDO DA VIRIÁVEL CHUTE EM INT POR MEIO DA FUNÇÃO INT()
+
+# elif = ELSE IF
