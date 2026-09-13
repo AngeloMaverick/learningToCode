@@ -1,0 +1,47 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+
+		// Calcular média de uma turma
+		// Não sei quantos alunos tem nessa turma
+
+		// O usuário vai digitar uma nota válida de 10 a 0
+		// Quando o usuário digitar uma nota válida, você vai armazenar no total
+		// outra variável quantas notas válidas foram digitas
+		// Sair = -1
+
+		Scanner entrada = new Scanner(System.in);
+		Double notaAtual = (double) 0;
+		Double total = (double) 0;
+		Integer qtdNotas = 0;
+
+		while (notaAtual != -1) {
+			do {
+				System.out.print("Digite uma nota: ");
+				notaAtual = entrada.nextDouble();
+
+				if (notaAtual >= 0.0 && notaAtual <= 10.0) {
+					total += notaAtual;
+					qtdNotas++;
+				} else {
+					if (notaAtual == -1) {
+						break;
+					}
+					System.out.println("Nota inválida!");
+				}
+
+			} while (!(notaAtual >= 0.0 && notaAtual <= 10.0) || notaAtual != -1);
+		}
+		;
+
+		System.out.println("Quantidade de notas válidas coletadas: " + qtdNotas);
+		System.out.println("Média da turma: " + total / qtdNotas);
+		System.out.println("Fim!");
+		entrada.close();
+
+	}
+}

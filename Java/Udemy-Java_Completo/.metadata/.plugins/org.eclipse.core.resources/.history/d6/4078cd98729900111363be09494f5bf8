@@ -1,0 +1,24 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+
+		// if(...) sentança; ou {}
+		// while(...) sentença; ou {}
+		// for(...; ...; ...) sentenca; ou {}
+
+		// do sentenca; ou {} while(...);
+
+		// Window > Preferences > Java > Editor > Templates
+		// Atalhos de código personalizados
+
+		Scanner entrada = new Scanner(System.in);
+
+		// código
+
+		entrada.close();
+	}
+}

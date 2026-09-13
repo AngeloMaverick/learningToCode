@@ -1,0 +1,8 @@
+package fundamentos.javac;
+
+public class Teste {
+
+	public static void main(String[] x) {
+		
+	}
+}

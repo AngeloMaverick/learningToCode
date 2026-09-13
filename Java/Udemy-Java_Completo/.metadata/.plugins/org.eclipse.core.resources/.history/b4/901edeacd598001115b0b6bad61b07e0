@@ -1,0 +1,31 @@
+package fundamentos.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio5 {
+	// Criar um programa que leia o valor da base e da altura de um triângulo e
+	// calcule a área.
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("===[CALCULADORA DE ÁREA DE TRIÂNGULO]===");
+
+		System.out.print("Insira o valor da base: ");
+		double base = entrada.nextDouble();
+		
+		System.out.print("Insira a altura: ");
+		double altura = entrada.nextDouble();
+		
+		double area = base * altura / 2;
+		
+		System.out.printf("Área do Triângulo: %.2fm² ", area);
+
+
+//		System.out.println("Valor ao quadrado: " + quadrado);
+//		System.out.println("Valor ao cubo: " + cubo);
+
+		entrada.close();
+	}
+}

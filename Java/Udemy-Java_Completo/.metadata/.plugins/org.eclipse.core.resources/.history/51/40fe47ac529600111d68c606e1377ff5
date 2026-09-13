@@ -1,0 +1,25 @@
+package fundamentos;
+
+public class ConversaoTipoPrimitivoNumerico {
+
+	public static void main(String[] args) {
+		
+		// conversão implícita int para double
+		double a = 1;
+		System.out.println(a);
+		
+		// conversão explícita de double para float com casting
+		float b = (float) 1.2345678888888;
+		System.out.println(b);
+		
+		// explícita de int para byte com cast
+		int c = 240;
+		byte d = (byte) c;
+		System.out.println(d); // chance de quebrar o valor por conta de sair do range
+		
+		// explícita double para int (CAST)
+		double e = 1.9999999;
+		int f = (int) e;
+		System.out.println(f); // perca de decimais
+	}
+}

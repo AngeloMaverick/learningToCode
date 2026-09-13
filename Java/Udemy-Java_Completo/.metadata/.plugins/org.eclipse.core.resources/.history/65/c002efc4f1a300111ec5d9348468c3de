@@ -1,0 +1,23 @@
+package classe;
+
+public class Data {
+	int dia;
+	int mes;
+	int ano;
+	
+	// Criar construtor padrão
+	// Criar construtor com os 3 parametros
+	// Quando for chamado o construtor padrão será criado um objeto com os valores 1/1/1970
+
+	String obterDataFormatada() {
+		return String.format("%d/%d/%d", dia, mes, ano);
+	}
+
+	void imprimirDataFormatada() {
+		System.out.println(obterDataFormatada());
+
+		// Sempre retorne valor, pois esse tipo de método não funcionará em uma
+		// aplicação desktop, web e mobile, somente em aplicação em terminal
+	}
+
+}

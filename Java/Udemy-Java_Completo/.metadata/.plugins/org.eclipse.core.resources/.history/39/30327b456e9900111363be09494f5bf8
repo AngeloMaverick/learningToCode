@@ -1,0 +1,11 @@
+package controle;
+
+public class While2 {
+
+	public static void main(String[] args) {
+// no console, você diz:
+		// scanner nextline
+		// teste 123
+		// somente quando o usuário digitar sair sai do laço e sair do programa.
+	}
+}

@@ -1,0 +1,28 @@
+package controle;
+
+import java.util.Scanner;
+
+public class While2 {
+
+	public static void main(String[] args) {
+		// no console, você diz:
+		// scanner nextline
+		// teste 123
+		// somente quando o usuário digitar sair sai do laço e sair do programa.
+		// maiuscula ou minuscula
+
+		Scanner entrada = new Scanner(System.in);
+		String texto;
+		
+		do {
+			System.out.print("Você diz: ");
+			texto = entrada.nextLine();	
+		} while (!texto.equalsIgnoreCase("sair"));
+
+		
+
+		System.out.println("Fim");
+		entrada.close();
+
+	}
+}

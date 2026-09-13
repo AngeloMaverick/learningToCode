@@ -1,0 +1,19 @@
+package fundamentos.tipos;
+
+public class PrimitivoVsObjeto {
+	// Tipo primitivo só carrega o valor
+	// Tipo objeto carrega funções utilizando "."
+
+	public static void main(String[] args) {
+
+		//String s = "texto";
+		String s = new String("texto"); // Também é possível declarar assim.
+		s.toUpperCase();
+
+		// Wrappers são a versão objeto dos tipos primitivos!
+		int a = 123;
+		System.out.println(a);
+		
+
+	}
+}

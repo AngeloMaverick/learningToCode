@@ -1,0 +1,10 @@
+package controle.switches;
+
+public class SwitchComBreak {
+
+	public static void main(String[] args) {
+		
+		String conceito = "";
+		int nota = 7;
+	}
+}

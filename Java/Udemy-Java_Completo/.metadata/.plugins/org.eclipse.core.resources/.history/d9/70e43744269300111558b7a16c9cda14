@@ -1,0 +1,27 @@
+package fundamentos;
+
+/*
+	1 Byte = 8 bits
+	
+	Byte  = 1 Byte (-128 até +127)
+	Short = 2 Bytes (+-32.767)
+	Int   = 4 Bytes
+	Long  = 8 Bytes
+	
+	Float  = 4 Bytes
+	Double = 8 Bytes
+	
+	Char - '?', 'a', '1'
+	Boolean - false, true
+*/
+
+public class TiposPrimitivos {
+	public static void main(String[] args) {
+		// Informações do funcionário
+		
+		// Tipos numéricos inteiros
+		byte anosDeEmpresa = 23;
+		short numeroDeVoos = 32768;
+		int id = 56789;
+	}
+}

@@ -1,0 +1,22 @@
+package fundamentos.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+	// Criar um programa que leia a temperatura em Celsius e converta para
+	// Fahrenheit
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("===[CONVERSOR DE CELSIUS PARA FAHRENHEIT]===");
+		System.out.print("Insira a temperatura em Celsius: ");
+		double c = entrada.nextDouble();
+		double f = c * 1.8 + 32;
+
+		System.out.printf("%.2f°C = %.2f°F", c, f);
+
+		entrada.close();
+	}
+}

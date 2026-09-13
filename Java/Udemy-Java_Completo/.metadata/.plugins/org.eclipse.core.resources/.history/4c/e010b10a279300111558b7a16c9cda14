@@ -1,0 +1,30 @@
+package fundamentos;
+
+/*
+	Byte  = 1 Byte (-128 até +127) = 8 bits
+	Short = 2 Bytes (-32.768 até +32.767) = 16 bits
+	Int   = 4 Bytes (-2.147.483.648 a +2.147.483.647) = 32 bits
+	
+	Long  = 8 Bytes = 64 bits
+	( -9.223.372.036.854.775.808 a +9.223.372.036.854.775.807)
+	
+	Float  = 4 Bytes
+	Double = 8 Bytes
+	
+	Char - '?', 'a', '1'
+	Boolean - false, true
+*/
+
+public class TiposPrimitivos {
+	public static void main(String[] args) {
+		// Informações do funcionário
+		
+		// Tipos numéricos inteiros
+		byte anosDeEmpresa = 23;
+		short numeroDeVoos = 542;
+		int id = 56789;
+		// Declaração de um literal Long. 
+		// Se não declarar o L ele entenderá que é um inteiro
+		long pontosAcumulados = 2_234_845_223L; 
+	}
+}

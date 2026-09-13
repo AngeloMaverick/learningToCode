@@ -1,0 +1,42 @@
+package controle.exercicios;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Exercicio6 {
+
+	// Jogo da adivinhação: Tentar adivinhar um número entre 0 - 100. Armazene um
+	// número aleatório em uma variável. O jogador tem 10 tentativas para adivinhar
+	// o número gerado. Ao final de cada tentativa, imprima a quantidade de
+	// tentativas restantes, e imprima se o número inserido é maior ou menor do que
+	// o número armazenado.
+	public static void main(String[] args) {
+
+		Random rand = new Random();
+		Scanner entrada = new Scanner(System.in);
+
+		// Inteiro aleatório de 0 a 100
+		int secreto = rand.nextInt(101);
+		int inserido;
+
+		System.out.println("===[JOGO DA ADIVINHAÇÃO]===");
+
+		for (int i = 1; i <= 10; i++) {
+			System.out.print("Adivinhe o número: ");
+			inserido = entrada.nextInt();
+
+			if (inserido < secreto) {
+				System.out.println("Número informado é MENOR que o número secreto");
+			} else if (inserido > secreto) {
+				System.out.println("Número informado é MAIOR que o número secreto");
+			} else {
+				System.out.println("VOCÊ ACERTOU O NÚMERO SECRETO!!!");
+			}
+			System.out.println("Tentativas restantes: " + (10 - i));
+
+		}
+
+		System.out.println("Fim de Jogo!");
+		entrada.close();
+	}
+}

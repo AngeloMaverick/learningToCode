@@ -1,0 +1,10 @@
+package fundamentos;
+
+public class Logicos {
+	// Para exibir o Explorador de Pacotes de forma Hierarquica
+	// Package Explorer > 3 Dots > Package Presentation > Hierarchical
+	
+	public static void main(String[] args) {
+		
+	}
+}

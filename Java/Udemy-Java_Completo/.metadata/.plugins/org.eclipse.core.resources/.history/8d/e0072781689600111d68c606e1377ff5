@@ -1,0 +1,19 @@
+AULA 55:
+JRE vs JDK
+JRE -> Java Runtime Environment - Usuário
+JDK -> Java Development Kit - Dev
+JVM -> Java Virtual Machine
+
+.java -> .class
+Byte Code
+
+Não é interpretado pelo seu sistema operacional.
+É usado a JVM para o seu sistema operacional interpretar o Bytecode.
+
+
+AULA 56:
+
+
+
+
+

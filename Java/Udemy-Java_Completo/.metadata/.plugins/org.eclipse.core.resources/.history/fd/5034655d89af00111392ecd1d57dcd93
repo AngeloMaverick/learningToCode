@@ -1,0 +1,11 @@
+package classe.desafioClasse;
+
+public class Pessoa {
+
+	String nome;
+	double peso;
+
+	void comer() {
+		
+	}
+}

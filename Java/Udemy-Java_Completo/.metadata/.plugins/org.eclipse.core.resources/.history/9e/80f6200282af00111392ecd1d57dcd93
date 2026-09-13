@@ -1,0 +1,40 @@
+package classe;
+
+public class Data {
+	int dia;
+	int mes;
+	int ano;
+
+	// Criar construtor padrão
+	// Quando for chamado o construtor padrão será criado um objeto com os valores
+	// 1/1/1970
+	Data() {
+//		dia = 1;
+//		mes = 1;
+//		ano = 1970;
+
+		// Chamando um construtor dentro de outro construtor de uma classe
+		this(1, 1, 1970);
+	}
+
+	// Criar construtor com os 3 parametros
+	Data(int dia, int mes, int ano) {
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+	}
+	// Java só consegue diferenciar os construtores pela quantidade e tipo dos
+	// parametros
+
+	String obterDataFormatada() {
+		final String formato = "%d/%d/%d";
+		return String.format(formato, this.dia, mes, ano);
+	}
+
+	void imprimirDataFormatada() {
+		System.out.println(this.obterDataFormatada());
+
+		// Sempre retorne valor, pois esse tipo de método (println) não funcionará em
+		// uma aplicação desktop, web e mobile, somente em aplicação em terminal
+	}
+}

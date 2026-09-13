@@ -1,0 +1,18 @@
+package classe;
+
+public class Produto {
+
+	String nome;
+	double preco;
+	double desconto;
+	
+	//tipo precoComDesconto(...) {
+		// quais os parametros
+		// qual o tipo de retorno
+		//return
+	//}
+	
+	double precoComDesconto(double preco, double desconto) {
+		return preco * (1 - desconto);
+	}
+}

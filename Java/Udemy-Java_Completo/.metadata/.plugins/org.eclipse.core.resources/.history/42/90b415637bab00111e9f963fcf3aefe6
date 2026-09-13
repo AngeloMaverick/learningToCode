@@ -1,0 +1,49 @@
+package controle.switches;
+
+import java.util.Scanner;
+
+public class SwitchComBreak {
+
+//	public static void main(String[] args) {
+
+		// O Default de um Switch pode ficar em qualquer posição
+		// Não necessariamente ele deve ficar no final
+		// Porém se ele não tiver break no final ele executará os próximos cases até
+		// chegar a um break
+
+		Scanner entrada = new Scanner(System.in);
+
+		String conceito = "";
+		System.out.print("Informe a nota: ");
+		int nota = entrada.nextInt();
+
+		switch (nota) {
+		case 10:
+		case 9:
+			conceito = "A";
+			break;
+		case 8:
+		case 7:
+			conceito = "B";
+			break;
+		case 6:
+		case 5:
+			conceito = "C";
+			break;
+		case 4:
+		case 3:
+			conceito = "D";
+			break;
+		case 2:
+		case 1:
+		case 0:
+			conceito = "E";
+			break;
+		default:
+			conceito = "não encontrado!";
+		}
+
+		System.out.println("Conceito é " + conceito);
+		entrada.close();
+	}
+}

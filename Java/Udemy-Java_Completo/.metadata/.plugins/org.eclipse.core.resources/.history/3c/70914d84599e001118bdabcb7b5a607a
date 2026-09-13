@@ -1,0 +1,23 @@
+package controle.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio7 {
+
+	// Criar um programa que enquanto estiver recebendo números positivos, imprime
+	// no console a soma dos números inseridos, caso receba um número negativo,
+	// encerre o programa. Tente utilizar a estrutura do while.
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+		int inserido = 0;
+		int soma = 0;
+
+		do {
+			inserido = entrada.nextInt();
+			System.out.println("Soma: " + inserido);
+		} while (inserido > 0);
+
+		entrada.close();
+	}
+}

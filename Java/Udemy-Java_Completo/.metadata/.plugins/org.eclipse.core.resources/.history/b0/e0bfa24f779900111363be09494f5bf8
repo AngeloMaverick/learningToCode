@@ -1,0 +1,28 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+
+		// Calcular média de uma turma
+		// Não sei quantos alunos tem nessa turma
+
+		// O usuário vai digitar uma nota válida de 10 a 0
+		// Quando o usuário digitar uma nota válida, você vai armazenar no total
+		// outra variável quantas notas válidas foram digitas
+		// Sair = -1
+
+		Scanner entrada = new Scanner(System.in);
+
+		do {
+			System.out.print("Digite uma nota: ");
+			entrada.nextDouble();
+
+		} while (false);
+
+		entrada.close();
+
+	}
+}

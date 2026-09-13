@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\Desktop\Documents\Projetos\Java COMPLETO Do Zero ao Profissional\curso-java\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3654592591.index
+859286804.index

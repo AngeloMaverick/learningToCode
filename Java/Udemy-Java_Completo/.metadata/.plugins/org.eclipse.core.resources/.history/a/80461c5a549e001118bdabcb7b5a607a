@@ -1,0 +1,16 @@
+package controle.exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	// Criar um programa que receba um número e diga se ele é um número primo.
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Insira um número: ");
+		int valor = entrada.nextInt();
+
+		entrada.close();
+	}
+}

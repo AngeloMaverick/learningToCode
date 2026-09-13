@@ -1,0 +1,11 @@
+package fundamentos;
+
+public class NotacaoPonto {
+	// SHIFT + ALT + Y = Word Wrap
+	
+	public static void main(String[] args) {
+		double a = 2.3;
+		// string tem que ser declarada com tipo com S maiúsculo, string com s minúsculo não existe em Java
+		String s = "Bom dia X";
+	}
+}

@@ -1,0 +1,11 @@
+package controle;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+
+		// if(...) sentança; ou {}
+		// while(...) sentença; ou {}
+		// for(...; ...; ...) sentenca; ou {}
+	}
+}

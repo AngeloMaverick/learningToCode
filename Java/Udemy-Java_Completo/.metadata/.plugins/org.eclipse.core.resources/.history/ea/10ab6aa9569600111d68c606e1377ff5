@@ -1,0 +1,16 @@
+package fundamentos.operadores;
+
+public class DesafioLogicos {
+	
+	public static void main(String[] args) {
+		// Trabalho na terça (V ou F)
+		// Trabalho na quinta (V ou F)
+		
+		// Se apenas um dos dois, comprar 32pol
+		// doi trab = 50 pol
+		// ou 50 ou 32 a familia ia tomar sorvete
+		// nenhum dos dois deu certo = ficar em casa sem tv.
+		
+		
+	}
+}

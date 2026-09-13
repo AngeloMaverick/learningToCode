@@ -1,0 +1,20 @@
+package classe;
+
+public class AreaCirc {
+
+	double raio;
+
+	// final e static não precisam estar em uma ordem específica, mas é
+	final double static pi = 3.1415;
+
+	AreaCirc(double raioInicial) {
+		raio = raioInicial;
+	}
+
+	double area() {
+		// pow é um método static do Math, pertence diretamente a classe e não a
+		// instância.
+		return pi * Math.pow(raio, 2);
+	}
+
+}

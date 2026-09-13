@@ -1,0 +1,61 @@
+package fundamentos;
+
+public class LojinhaServer {
+	// Dicionário simples de sinônimos (O "De-Para")
+    private static final Map<String, String> SINONIMOS = Map.of(
+        "gilete", "Lâmina Wilkinson",
+        "xerox", "Xerox P&B",
+        "pilha", "Pilha Panasonic"
+    );
+
+    public static void main(String[] args) throws IOException {
+        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+        
+        // Endpoint para receber as vendas
+        server.createContext("/api/vendas", new VendaHandler());
+        
+        server.setExecutor(null); // cria um executor padrão
+        System.out.println("Servidor rodando em http://localhost:8080");
+        server.start();
+    }
+
+    static class VendaHandler implements HttpHandler {
+        @Override
+        public void handle(HttpExchange exchange) throws IOException {
+            // Permitir CORS básico para o front-end acessar
+            exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "*");
+            exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "Content-Type");
+
+            if ("OPTIONS".equals(exchange.getRequestMethod())) {
+                exchange.sendResponseHeaders(204, -1);
+                return;
+            }
+
+            if ("POST".equals(exchange.getRequestMethod())) {
+                // Ler o texto enviado pelo front-end
+                String textoBruto = new String(exchange.getRequestBody().readAllBytes());
+                
+                // Aplicar a lógica de tradução de sinônimos
+                String textoPadronizado = padronizarTexto(textoBruto);
+                
+                System.out.println("Recebido e Padronizado: " + textoPadronizado);
+
+                // Responder com sucesso
+                String resposta = "{\"status\": \"sucesso\", \"processado\": \"" + textoPadronizado + "\"}";
+                exchange.sendResponseHeaders(200, resposta.getBytes().length);
+                OutputStream os = exchange.getResponseBody();
+                os.write(resposta.getBytes());
+                os.close();
+            }
+        }
+
+        private String padronizarTexto(String texto) {
+            String resultado = texto.toLowerCase();
+            // Substitui termos populares pelos oficiais
+            for (Map.Entry<String, String> entry : SINONIMOS.entrySet()) {
+                resultado = resultado.replace(entry.getKey(), entry.getValue());
+            }
+            return resultado;
+        }
+    }
+}
