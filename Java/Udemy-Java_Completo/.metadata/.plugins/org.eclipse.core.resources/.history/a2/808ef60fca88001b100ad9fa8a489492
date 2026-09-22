@@ -1,9 +1,0 @@
-package fundamentos.exercicios;
-
-public class Exercicio03 {
-	public static void main(String[] args) {
-		float peso = 0;
-		float altura = 0;
-		float resultado = (float) (peso/(Math.pow(altura, 2)));
-	}
-}

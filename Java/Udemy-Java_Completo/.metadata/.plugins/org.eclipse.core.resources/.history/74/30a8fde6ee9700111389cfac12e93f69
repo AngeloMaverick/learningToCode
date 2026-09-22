@@ -1,9 +1,0 @@
-package fundamentos.exercicios;
-
-public class Exercicio1 {
-	// Criar um programa que leia a temperatura em Fahrenheit e converta para Celsius
-	
-	public static void main(String[] args) {
-		
-	}
-}
