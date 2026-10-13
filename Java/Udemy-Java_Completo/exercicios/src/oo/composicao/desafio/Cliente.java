@@ -13,13 +13,17 @@ public class Cliente {
 
 	String nome;
 
-	Cliente() {
-
+	Cliente(String nome) {
+		this.nome = nome;
 	}
 
 	Cliente(List<Compra> compras, String nome) {
 		this.compras = compras;
 		this.nome = nome;
+	}
+
+	void adicionarCompra(Compra compra) {
+		this.compras.add(compra);
 	}
 
 	double obterValorTotal() {

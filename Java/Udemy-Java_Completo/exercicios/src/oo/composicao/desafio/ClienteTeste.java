@@ -11,6 +11,7 @@ public class ClienteTeste {
 		// compra ao cliente
 		// obterValorTotal
 
+		// Minha resposta
 		Produto tesoura = new Produto(5.0, "Tesoura");
 		Produto caneta = new Produto(2.5, "Caneta");
 		Produto toalha = new Produto(38.0, "Toalha");
@@ -28,11 +29,28 @@ public class ClienteTeste {
 		compra2.itens.add(item3);
 		compra2.itens.add(item4);
 
-		Cliente cliente1 = new Cliente();
-		cliente1.nome = "Teste";
+		Cliente cliente1 = new Cliente("Teste");
 		cliente1.compras.add(compra1);
 		cliente1.compras.add(compra2);
 
 		System.out.println(cliente1.obterValorTotal());
+
+		// RESPOSTA DO DESAFIO
+		Cliente cliente = new Cliente("Maria Julia Moraes");
+
+		Compra compraA = new Compra();
+		compraA.adicionarItem(9.67, "Caneta", 100);
+		compraA.adicionarItem(new Produto(1897.88, "Notebook"), 2);
+
+		Compra compraB = new Compra();
+		compraB.adicionarItem(10, "Caderno", 10);
+		compraB.adicionarItem(new Produto(998.90, "Impressora"), 1);
+
+		cliente.adicionarCompra(compraA);
+		cliente.compras.add(compraB);
+
+		System.out.println(cliente.obterValorTotal());
+
 	}
+
 }
