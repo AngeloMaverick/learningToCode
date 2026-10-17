@@ -4,8 +4,12 @@ public class Pista {
 
 	public static void main(String[] args) {
 
-		Ferrari ferrari = new Ferrari();
-		Civic civic = new Civic();
+		// Os métodos são chamados da instância criada e não do tipo da variável que
+		// você definiu, ou seja, o código abaixo e Ferrari ferrari = new Ferrari() tem
+		// exatamente o mesmo comportamento. E esse tipo de declaração é permitido pois
+		// tipo Carro é pai de Ferrari.
+		Carro ferrari = new Ferrari(25);
+		Civic civic = new Civic(8);
 
 		ferrari.acelerar();
 		civic.acelerar();
