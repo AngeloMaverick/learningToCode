@@ -2,15 +2,15 @@ package oo.heranca.desafio;
 
 public class Carro {
 
-	final int VELOCIDADE_MAXIMA;
-	Integer velocidadeAtual = 0;
-	int delta = 5;
+	public final int VELOCIDADE_MAXIMA;
+	protected Integer velocidadeAtual = 0;
+	protected int delta = 5;
 
-	Carro(int velocidadeMaxima) {
+	protected Carro(int velocidadeMaxima) {
 		VELOCIDADE_MAXIMA = velocidadeMaxima;
 	}
 
-	void acelerar() {
+	public void acelerar() {
 		if (velocidadeAtual + delta > VELOCIDADE_MAXIMA) {
 			velocidadeAtual = VELOCIDADE_MAXIMA;
 		} else {
@@ -18,7 +18,7 @@ public class Carro {
 		}
 	}
 
-	void frear() {
+	public void frear() {
 		if (velocidadeAtual >= 5) {
 			velocidadeAtual -= 5;
 		} else {
@@ -28,6 +28,6 @@ public class Carro {
 
 	// Método utilizado no vídeo resposta
 	public String toString() {
-		return "Velocidade atual é " + velocidadeAtual + "Km/h.";
+		return velocidadeAtual + "Km/h";
 	}
 }
