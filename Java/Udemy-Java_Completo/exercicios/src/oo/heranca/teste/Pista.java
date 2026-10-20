@@ -1,6 +1,5 @@
 package oo.heranca.teste;
 
-import oo.heranca.desafio.Carro;
 import oo.heranca.desafio.Civic;
 import oo.heranca.desafio.Ferrari;
 
@@ -12,8 +11,12 @@ public class Pista {
 		// você definiu, ou seja, o código abaixo e Ferrari ferrari = new Ferrari() tem
 		// exatamente o mesmo comportamento. E esse tipo de declaração é permitido pois
 		// tipo Carro é pai de Ferrari.
-		Carro ferrari = new Ferrari(25);
+		// Carro ferrari = new Ferrari(25);
+		Ferrari ferrari = new Ferrari(400);
 		Civic civic = new Civic(8);
+
+		ferrari.ligarTurbo();
+		// ferrari.ligarAr();
 
 		ferrari.acelerar();
 		civic.acelerar();
