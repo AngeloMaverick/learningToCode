@@ -18,6 +18,8 @@ public class Pista {
 		ferrari.ligarTurbo();
 		// ferrari.ligarAr();
 
+		System.out.println(ferrari.velocidadeDoAr());
+
 		ferrari.acelerar();
 		civic.acelerar();
 		System.out.println("Ferrari: " + ferrari);

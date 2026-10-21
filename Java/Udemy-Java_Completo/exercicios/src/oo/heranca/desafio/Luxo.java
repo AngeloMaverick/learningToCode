@@ -2,7 +2,14 @@ package oo.heranca.desafio;
 
 public interface Luxo {
 
-	void ligarAr();
+	// todo método dentro de interface é public e abstract por padrão
+	public void ligarAr();
 
-	void desligarAr();
+	abstract void desligarAr();
+
+	// método de interface com retorno default (Não é obrigatório a sua
+	// implementação)
+	default int velocidadeDoAr() {
+		return 1;
+	};
 }
