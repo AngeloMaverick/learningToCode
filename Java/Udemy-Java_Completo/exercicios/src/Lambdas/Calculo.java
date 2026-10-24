@@ -1,4 +1,4 @@
-package Lambdas;
+package lambdas;
 
 //Só pode ter um único método ABSTRATO e é possível utilizar expressões lamba
 @FunctionalInterface
