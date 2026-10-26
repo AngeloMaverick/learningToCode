@@ -1,15 +1,17 @@
-package lambdas;
+package lambdas.interfacesFuncionais;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+
+import lambdas.Produto;
 
 public class Consumidor {
 
 	public static void main(String[] args) {
 
 		// Interface Consumer, recebe uma parametro e não retorna nada. <T> -> void
-		Consumer<Produto> imprimirNome = p -> System.out.println(p.nome + "!!!");
+		Consumer<Produto> imprimirNome = p -> System.out.println(p.getNome() + "!!!");
 
 		Produto p1 = new Produto("Caneta", 12.34, 0.09);
 
@@ -25,7 +27,7 @@ public class Consumidor {
 
 		// Se passar o mouse no método forEach percebe-se que ele recebe um Consumer
 		produtos.forEach(imprimirNome);
-		produtos.forEach(p -> System.out.println(p.preco));
+		produtos.forEach(p -> System.out.println(p.getPreco()));
 		produtos.forEach(System.out::println);
 
 	}
